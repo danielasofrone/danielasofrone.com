@@ -14,14 +14,12 @@ export const Navigation = styled.div`
 `;
 
 export const NavLink = styled.div`
-  display: none;
-  @media (min-width: 768px) {
-    display: block;
+    float:right;
     transition: color 0.4s ease 0s;
     font-family: 'PT Serif', serif;
-    line-height: 32px;
-    font-size: 24px;
-    margin: 5px 20px 10px 10px;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    margin-left: 7px;
     cursor: pointer;
     a {
       color: #000;
@@ -32,6 +30,14 @@ export const NavLink = styled.div`
       color: #000;
       text-decoration: none;
     }
+    @media (min-width: 576px) {
+      margin-left: 20px;
+      line-height: 2rem;
+      font-size: 1.125rem;
+  }
+  @media (min-width: 768px) {
+      line-height: 2.5rem;
+      font-size: 1.5rem;
   }
 `;
 export const MenuIcon = styled.div`
@@ -51,6 +57,15 @@ export const MenuIcon = styled.div`
 `;
 
 export const Title = styled.img`
-  margin-top: 5px;
+  width: 135px;
+  height: 24px;
+  @media (min-width: 576px) {
+    width: 200px;
+    height: 36px;
+  }
+  @media (min-width: 768px) {
+    width: 270px;
+    height: 48px;
+  }
 `;
 

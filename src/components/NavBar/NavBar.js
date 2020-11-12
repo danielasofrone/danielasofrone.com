@@ -16,7 +16,7 @@ const NavBar = () => (
       </S.NavLink>
       <S.NavLink>
         <NavLink to={"/about"} activeStyle={{
-     textDecoration: "underline"}}>About me</NavLink>
+     textDecoration: "underline"}}>About</NavLink>
       </S.NavLink>
     </S.Navigation>
   </S.Wrapper>

@@ -5,14 +5,11 @@ import icon_github from '../../assets/icon_github.svg'
 import icon_linkedin from '../../assets/icon_linkedin.svg'
 import icon_email from '../../assets/icon_email.svg'
 import icon_flickr from '../../assets/icon_flickr.svg'
-import image_homepage from '../../assets/image_homepage.png'
 
 const Homepage = ()  => {
   return (
     <S.Wrapper>
       <NavBar/>
-   <S.Container>
-   <S.LeftContainer>
     <S.PageTitle>
       Hi, my name is Daniela.
       </S.PageTitle>
@@ -34,11 +31,7 @@ const Homepage = ()  => {
         <S.Icon src ={icon_flickr} isSmall/>
         </a>
       </S.IconsContainer>
-    </S.LeftContainer>
-    <S.RightContainer>
-    {/* <S.Image src ={image_homepage}/> */}
-    </S.RightContainer>
-   </S.Container>
+
     </S.Wrapper>
   )
 }
