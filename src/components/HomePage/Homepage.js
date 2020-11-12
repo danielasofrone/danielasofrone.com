@@ -24,7 +24,7 @@ const Homepage = ()  => {
         <a href="https://github.com/danielasofrone?tab=repositories" target="blank">
         <S.Icon src ={icon_github} />
         </a>
-        <a href="mailto:daniela.sofrone.sd@gmail.com" target="blank">
+        <a href="mailto:danielasofrone.com@gmail.com" target="blank">
         <S.Icon src ={icon_email} />
         </a>
         <a href="https://www.flickr.com/photos/steepwater/" target="blank">
