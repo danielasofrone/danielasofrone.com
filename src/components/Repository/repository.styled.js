@@ -44,3 +44,24 @@ export const RepoDescription = styled.div`
   padding-right: 8px;
   white-space: normal;
 `;
+
+export const DeploymentLink = styled.div`
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  padding-bottom: 10px;
+  margin-right: 5px;
+  text-decoration: none;
+  color: #000;
+  :hover {
+    color: #4B6D6D;
+    text-decoration: none;
+  }
+a {
+  color: #000;
+  text-decoration: none;
+  :hover { color: #4B6D6D;
+    text-decoration: underline;
+  }
+}
+`;

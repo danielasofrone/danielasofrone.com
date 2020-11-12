@@ -39,6 +39,7 @@ const Projects = ()  => {
     html_url={repo.html_url}
     name={repo.name}
     description={repo.description}
+    deploymentLink={repo.homepage}
 />
  ))}
 </div>
