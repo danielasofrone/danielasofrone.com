@@ -13,3 +13,18 @@ font-size: 2.5rem;
 letter-spacing: -0.03em;
 color: #4B6D6D;
 `;
+
+export const LoadingContainer = styled.div`
+  display: flex;
+  margin-top: 200px;
+`;
+
+export const Loading = styled.div`
+  position: relative;
+  position: relative;
+  margin: 0 auto;
+  h2 {
+    font-family: "Roboto", sans-serif;
+    color: #555252;
+  }
+`;

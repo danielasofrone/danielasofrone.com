@@ -5,16 +5,19 @@ import icon_github from '../../assets/icon_github.svg'
 import icon_linkedin from '../../assets/icon_linkedin.svg'
 import icon_email from '../../assets/icon_email.svg'
 import icon_flickr from '../../assets/icon_flickr.svg'
+import image_homepage from '../../assets/image_homepage.png'
 
 const Homepage = ()  => {
   return (
     <S.Wrapper>
       <NavBar/>
-      <S.PageTitle>
-      Frontend Developer with love for design
+   <S.Container>
+   <S.LeftContainer>
+    <S.PageTitle>
+      Hi, my name is Daniela.
       </S.PageTitle>
       <S.DescriptionContainer>
-      Hi, I’m Daniela, a Frontend Developer who loves ReactJs, UX and design implementation. I also have experience as a QA engineer and working with users in general. I love working in an agile, collaborative environment, creating responsive React applications and extending my knowledge.
+        I'm a Frontend Developer who loves ReactJs, UX and design implementation. I also have experience as a QA engineer and working with users in general. I love working in an agile, collaborative environment, creating responsive React applications and extending my knowledge.
       </S.DescriptionContainer>
       <S.IconsContainer>
         <a href="https://www.linkedin.com/in/daniela-sofrone-2ab7289b/" target="blank">
@@ -31,6 +34,11 @@ const Homepage = ()  => {
         <S.Icon src ={icon_flickr} isSmall/>
         </a>
       </S.IconsContainer>
+    </S.LeftContainer>
+    <S.RightContainer>
+    {/* <S.Image src ={image_homepage}/> */}
+    </S.RightContainer>
+   </S.Container>
     </S.Wrapper>
   )
 }
