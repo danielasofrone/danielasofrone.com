@@ -1,31 +1,33 @@
 import styled from "styled-components";
 
 export const RepoContainer = styled.li`
-text-align: left;
-border-bottom: 1px solid #e1e4e8;
-box-sizing: border-box;
-padding-top: 24px;
-padding-bottom: 24px;
-margin: 40px 20px 40px 0;
-list-style-type: none;
-`;
+  text-align: left;
+  border-bottom: 1px solid #e1e4e8;
+  box-sizing: border-box;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin: 20px 0;
+  list-style-type: none;
+  @media (min-width: 576px) {
+    margin: 40px 0;
+    }
+  `;
 
 export const RepoTitle = styled.div`
-display: flex;
-`;
+  display: flex;
+  :hover {
+    text-decoration: underline;
+  }
+  `;
 
 export const RepoName = styled.div`
-font-family: "Roboto", sans-serif;
-color: #000;
-font-size: 18px;
-padding-bottom: 10px;
-margin-right: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  padding-bottom: 10px;
+  margin-right: 5px;
 a {
-  color: #000;
+  color: #4B6D6D;;
   text-decoration: none;
-  :visited {
-    color: #000;
-  }
 }
 `;
 
@@ -35,7 +37,7 @@ export const DescriptionContainer = styled.div`
 `;
 
 export const RepoDescription = styled.div`
-  font-family: "Roboto", sans-serif;
+  font-family: 'PT Serif', serif;
   color: #555252;
   font-size: 14px;
   margin-top: 8px;

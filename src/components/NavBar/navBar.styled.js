@@ -19,7 +19,7 @@ export const NavLink = styled.div`
     font-family: 'PT Serif', serif;
     line-height: 1.5rem;
     font-size: 1rem;
-    margin-left: 7px;
+    margin-left: 10px;
     cursor: pointer;
     a {
       color: #000;

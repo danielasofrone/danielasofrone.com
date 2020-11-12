@@ -8,16 +8,18 @@ export const Wrapper = styled.div`
 `;
 
 export const PageTitle = styled.div`
-margin-top: 80px;
+margin-top: 30px;
 font-family: 'Roboto', sans-serif; ;
 font-weight: 500;
 font-size: 1.5rem;
 letter-spacing: -0.03em;
 color: #4B6D6D;
 @media (min-width: 576px) {
+  margin-top: 50px;
   font-size: 2rem;
   }
   @media (min-width: 768px) {
+    margin-top: 80px;
     font-size: 2.5rem;
   }
 `;
