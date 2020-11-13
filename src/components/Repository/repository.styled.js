@@ -22,11 +22,11 @@ export const RepoTitle = styled.div`
 
 export const RepoName = styled.div`
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 1.25rem;
   padding-bottom: 10px;
   margin-right: 5px;
 a {
-  color: #4B6D6D;;
+  color: #4B6D6D;
   text-decoration: none;
 }
 `;
@@ -39,7 +39,7 @@ export const DescriptionContainer = styled.div`
 export const RepoDescription = styled.div`
   font-family: 'PT Serif', serif;
   color: #555252;
-  font-size: 14px;
+  font-size: 1rem;
   margin-top: 8px;
   padding-right: 8px;
   white-space: normal;
@@ -52,13 +52,8 @@ export const DeploymentLink = styled.div`
   padding-bottom: 10px;
   margin-right: 5px;
   text-decoration: none;
-  color: #000;
-  :hover {
-    color: #4B6D6D;
-    text-decoration: none;
-  }
 a {
-  color: #000;
+  color: #4B6D6D;
   text-decoration: none;
   :hover { color: #4B6D6D;
     text-decoration: underline;

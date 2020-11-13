@@ -22,6 +22,7 @@ const Repository = ({ html_url, name, description, deploymentLink }) => {
     </>
   );
 };
+
 Repository.propTypes = {
   html_url: PropTypes.string,
   name: PropTypes.string,

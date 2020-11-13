@@ -40,6 +40,7 @@ export const NavLink = styled.div`
       font-size: 1.5rem;
   }
 `;
+
 export const MenuIcon = styled.div`
   display: block;
   cursor: pointer;
