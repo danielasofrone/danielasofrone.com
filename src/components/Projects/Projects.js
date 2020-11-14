@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import NavBar from '../NavBar/NavBar'
 import * as S from './projects.styled'
+import * as C from '../Introduction/introduction.styled'
 import axios from "axios";
 import Repository from '../Repository/Repository'
 
@@ -21,10 +21,9 @@ const Projects = ()  => {
 
   return (
     <S.Wrapper>
-      <NavBar/>
-      <S.PageTitle>
+      <C.SectionTile isSmall>
         Some of my Github projects:
-      </S.PageTitle>
+      </C.SectionTile>
       {loading ? (
  <S.LoadingContainer>
  <S.Loading>

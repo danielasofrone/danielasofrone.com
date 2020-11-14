@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Root from './Root';
+import HomePage from '../src/components/HomePage/Homepage';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Root />
+    <HomePage />
   </React.StrictMode>,
   document.getElementById("root")
 );
