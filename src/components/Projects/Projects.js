@@ -1,48 +1,42 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import * as S from './projects.styled'
 import * as C from '../Introduction/introduction.styled'
-import axios from "axios";
-import Repository from '../Repository/Repository'
+import ProjectsCard from '../ProjectsCard/ProjectsCard'
+import trafalgar_preview from '../../assets/img/trafalgar_preview.png'
+import gatsby_site_preview from '../../assets/img/gatsby_site_preview.png'
+import eState_preview from '../../assets/img/eState_preview.png'
 
 const Projects = ()  => {
-  const [repos, setRepos] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchRepo = async () => {
-      const response = await axios.get(
-        "https://api.github.com/users/danielasofrone/repos"
-      );
-      setRepos(response.data);
-      setLoading(false);
-    };
-    fetchRepo();
-  }, []);
 
   return (
     <S.Wrapper>
       <C.SectionTile isSmall>
         Some of my Github projects:
       </C.SectionTile>
-      {loading ? (
- <S.LoadingContainer>
- <S.Loading>
-   <h2>Loading...</h2>
- </S.Loading>
-</S.LoadingContainer>
-) : (
-<div>
- {repos.map((repo, id) => (
- <Repository
-    key={id}
-    html_url={repo.html_url}
-    name={repo.name}
-    description={repo.description}
-    deploymentLink={repo.homepage}
-/>
- ))}
-</div>
-)}
+ <S.ProjectsContainer>
+ <ProjectsCard
+     image={trafalgar_preview}
+     deploymentLink="https://healthcare-homepage.web.app"
+     title="Healthcare landing page"
+     description="Custom design implementation for a Homepage created in React using Styled Components. Deployed with Firebase."
+     githubLink="https://github.com/danielasofrone/healthcare-landing-page"
+     />
+  <ProjectsCard
+     image={gatsby_site_preview}
+     deploymentLink="https://the-content-full-gatsby.netlify.app"
+     title="Gatsby - Contentful blog"
+     description="React application created using GatsbyJs, GraphQL and Contentful. Deployed with Netlify."
+     githubLink="https://github.com/danielasofrone/the-content-full-gatsby"
+     />
+      <ProjectsCard
+     image={eState_preview}
+     deploymentLink="https://e-state-df441.web.app/"
+     title="Imobiliar market"
+     description="Custom design implentation in ReactJs using Styled Components. Deployed with Firebase. "
+     githubLink="https://github.com/danielasofrone/e-State"
+     />
+ </S.ProjectsContainer>
+
     </S.Wrapper>
   )
 }

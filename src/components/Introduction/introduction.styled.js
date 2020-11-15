@@ -1,20 +1,20 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
- margin: 0 7%;
+ margin: 0 10%;
 @media (min-width: 576px) {
-  margin: 0 15%;
+  margin: 0 25%;
   }
 `;
 
 export const SectionTile = styled.div`
   text-align: center;
-  margin: ${({ isSmall }) => (isSmall ? "30px 0" : "0 0 30px 0")};
-  font-family: 'Roboto', sans-serif; ;
+  margin: 40px 0;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
   letter-spacing: -0.03em;
-  color: #4B6D6D;
+  color: #344854;
 :before,
 :after {
   background-color: #000;
@@ -23,7 +23,7 @@ export const SectionTile = styled.div`
   height: 2px;
   position: relative;
   vertical-align: middle;
-  width: 20%;
+  width: 10%;
 }
 
 :before {
@@ -33,10 +33,10 @@ export const SectionTile = styled.div`
 
 :after {
   left: 0.5em;
-  margin-right: -47%;
+  margin-right: -50%;
 }
 @media (min-width: 576px) {
-  margin: ${({ isSmall }) => (isSmall ? "50px 0" : "0 0 50px 0")};
+  margin: 70px 0;
   font-size: 2rem;
   }
   @media (min-width: 768px) {
@@ -48,7 +48,7 @@ export const SectionTile = styled.div`
 export const DescriptionContainer = styled.div`
   text-align: justify;
   margin-top: 30px;
-  font-family: 'PT Serif', serif; ;
+  font-family: 'PT Serif', serif;
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: -0.03em;

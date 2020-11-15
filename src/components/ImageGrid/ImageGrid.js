@@ -22,7 +22,7 @@ export default function ImageGridList() {
   const classes = useStyles();
 
   return (
-    <>
+    <S.Wrapper>
      <S.SectionTile>
         Visuals
       </S.SectionTile>
@@ -35,6 +35,6 @@ export default function ImageGridList() {
         ))}
       </GridList>
     </div>
-    </>
+    </S.Wrapper>
   );
 }
