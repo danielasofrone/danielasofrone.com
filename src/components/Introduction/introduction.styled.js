@@ -54,6 +54,10 @@ export const Subtitle = styled.div`
   font-family: 'PT Serif', serif;
   font-size: 1rem;
   color: #344854;
+  a {
+    color: #344854;
+
+  }
   @media (min-width: 768px) {
     font-size: 1.125rem;
     margin-bottom: 70px;

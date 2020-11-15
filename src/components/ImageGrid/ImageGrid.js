@@ -22,14 +22,16 @@ export default function ImageGridList() {
   const classes = useStyles();
 
   return (
-    <S.Wrapper >
+    <S.Wrapper isNarrow>
      <S.SectionTitle isSmall>
         Visuals
       </S.SectionTitle>
       <S.Subtitle>
-      I also have a passion for photography, especially portrets and landscapes.
+        <p>I also have a passion for photography, especially portrets and landscapes. For pictures, you can visit my</p>
+     <a href="https://www.flickr.com/photos/steepwater" target="blank">Flickr account.</a>
       </S.Subtitle>
-    <div className={classes.root}>
+      <a href="https://www.flickr.com/photos/steepwater" target="blank">
+      <div className={classes.root}>
       <GridList cellHeight={160} className={classes.gridList} cols={3}>
         {images.map((image) => (
           <GridListTile key={image.img} cols={image.cols || 1}>
@@ -38,6 +40,8 @@ export default function ImageGridList() {
         ))}
       </GridList>
     </div>
+      </a>
+    
     </S.Wrapper>
   );
 }

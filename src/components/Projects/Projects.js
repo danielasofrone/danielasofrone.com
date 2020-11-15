@@ -15,7 +15,8 @@ const Projects = ()  => {
     Selected projects
    </C.SectionTitle>
  <C.Subtitle>
- These are some of the projects I've worked on, both personl and work related. If you want to see more of my work please visit my github account.
+   <p>These are some of the projects I've worked on, both personl and work related.</p>
+   <p>If you want to see more of my work please visit my Github account.</p>
  </C.Subtitle>
   </S.TitleContainer>
     <S.Wrapper>

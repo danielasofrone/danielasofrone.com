@@ -15,7 +15,7 @@ export const ServicesCardContainer = styled.div`
     color: #4B4F56;
     &:hover,
   &:focus {
-    transform: scale3d(1.015, 1.015, 1);
+    transform: scale3d(1.050, 1.050, 1);
 
     &::after {
       opacity: 1;

@@ -20,4 +20,12 @@ export const Icon = styled.img`
   margin-top: ${({ isSmall }) => (isSmall ? "5px" : "")};
   margin-right: 30px;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    transform: scale3d(1.050, 1.050, 1);
+
+    &::after {
+      opacity: 1;
+    }
+  }
 `;
