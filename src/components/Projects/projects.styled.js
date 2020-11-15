@@ -15,3 +15,8 @@ align-items: center;
   flex-direction: row;
   }
 `;
+
+
+export const TitleContainer = styled.div`
+margin: 0 10%;
+`;

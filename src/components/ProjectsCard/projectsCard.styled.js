@@ -13,10 +13,18 @@ export const ServicesCardContainer = styled.div`
     white-space: normal;
     transition: box-shadow 200ms cubic-bezier(.02, .01, .47, 1), transform 200ms cubic-bezier(.02, .01, .47, 1);
     color: #4B4F56;
+    &:hover,
+  &:focus {
+    transform: scale3d(1.015, 1.015, 1);
+
+    &::after {
+      opacity: 1;
+    }
+  }
 `;
 export const ServicesCardImage = styled.img`
     width: 100%;
-    min-height: 250px;
+    height: 250px;
 `;
 
 export const TextContainer = styled.div`

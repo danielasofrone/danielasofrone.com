@@ -1,15 +1,17 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
- margin: 0 10%;
+
+ margin: ${({ isNarrow }) => (isNarrow ? "0 5%" : "0 10%")};
 @media (min-width: 576px) {
-  margin: 0 25%;
+  margin: ${({ isNarrow }) => (isNarrow ? "0 10%" : "0 25%")};
+ 
   }
 `;
 
-export const SectionTile = styled.div`
+export const SectionTitle = styled.div`
+  margin: ${({ isSmall }) => (isSmall ? "20px 0 " : "40px 0;")};
   text-align: center;
-  margin: 40px 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
@@ -36,13 +38,26 @@ export const SectionTile = styled.div`
   margin-right: -50%;
 }
 @media (min-width: 576px) {
-  margin: 70px 0;
+  margin: ${({ isSmall }) => (isSmall ? "50px 0 35px 0" : "50px 0;")};
   font-size: 2rem;
   }
   @media (min-width: 768px) {
     font-size: 2.5rem;
   }
 
+`;
+
+export const Subtitle = styled.div`
+  margin-bottom: 40px;
+  white-space: normal;
+  text-align: center;
+  font-family: 'PT Serif', serif;
+  font-size: 1rem;
+  color: #344854;
+  @media (min-width: 768px) {
+    font-size: 1.125rem;
+    margin-bottom: 70px;
+  }
 `;
 
 export const DescriptionContainer = styled.div`

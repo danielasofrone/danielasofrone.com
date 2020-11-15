@@ -4,9 +4,9 @@ import * as S from './introduction.styled'
 const Introduction = ()  => {
   return (
     <S.Wrapper>
-      <S.SectionTile>
+      <S.SectionTitle>
         About me
-      </S.SectionTile>
+      </S.SectionTitle>
       <S.DescriptionContainer>
           <p> I'm a Frontend developer who loves ReactJs, UX and design implementation. I come from quite a different background: having studied language and literature, I’ve gathered experience working with customers and people in general and teaching.</p>
           <p>I’ve always been fascinated by computer science and development but I was reluctant to try it out, because of the prejudice many of us live with, that our study field should dictate the direction of our career. So five years ago I started with HTML and CSS and moved from there to JavaScript and React. I’ve also worked as a QA engineer for a year which helped me develop an eye for spotting possible issues.</p>

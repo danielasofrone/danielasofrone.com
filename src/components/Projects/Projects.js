@@ -9,10 +9,16 @@ import eState_preview from '../../assets/img/eState_preview.png'
 const Projects = ()  => {
 
   return (
+    <>
+  <S.TitleContainer>
+  <C.SectionTitle isSmall>
+    Selected projects
+   </C.SectionTitle>
+ <C.Subtitle>
+ These are some of the projects I've worked on, both personl and work related. If you want to see more of my work please visit my github account.
+ </C.Subtitle>
+  </S.TitleContainer>
     <S.Wrapper>
-      <C.SectionTile isSmall>
-        Some of my Github projects:
-      </C.SectionTile>
  <S.ProjectsContainer>
  <ProjectsCard
      image={trafalgar_preview}
@@ -38,6 +44,7 @@ const Projects = ()  => {
  </S.ProjectsContainer>
 
     </S.Wrapper>
+    </>
   )
 }
 

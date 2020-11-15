@@ -22,10 +22,13 @@ export default function ImageGridList() {
   const classes = useStyles();
 
   return (
-    <S.Wrapper>
-     <S.SectionTile>
+    <S.Wrapper >
+     <S.SectionTitle isSmall>
         Visuals
-      </S.SectionTile>
+      </S.SectionTitle>
+      <S.Subtitle>
+      I also have a passion for photography, especially portrets and landscapes.
+      </S.Subtitle>
     <div className={classes.root}>
       <GridList cellHeight={160} className={classes.gridList} cols={3}>
         {images.map((image) => (
