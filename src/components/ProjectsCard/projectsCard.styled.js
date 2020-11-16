@@ -62,6 +62,7 @@ export const ServicesCardDescription = styled.div`
 export const GithubIconContainer = styled.div`
   padding: 10px 25px 30px 25px;
   cursor: pointer;
+  display: ${({ noGithub }) => (noGithub ? "none" : "block")};
 `;
 
 export const Icon = styled.img`

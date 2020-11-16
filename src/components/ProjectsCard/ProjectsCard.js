@@ -1,9 +1,10 @@
 import React from "react";
 import * as S from "./projectsCard.styled";
+import PropTypes from "prop-types";
 import icon_github from '../../assets/icons/icon_github.svg'
 
 
-const ProjectsCard = ({image, deploymentLink, title, description, githubLink}) => (
+const ProjectsCard = ({image, deploymentLink, title, description, githubLink, noGithub}) => (
   <S.ServicesCardContainer>
     <a href={deploymentLink} target="blank">
     <S.ServicesCardImage src={image} alt="Card image" />
@@ -15,7 +16,7 @@ const ProjectsCard = ({image, deploymentLink, title, description, githubLink}) =
     <S.ServicesCardDescription>{description}
     </S.ServicesCardDescription>
     </S.TextContainer>
-    <S.GithubIconContainer>
+    <S.GithubIconContainer noGithub={noGithub}>
     <a href={githubLink} target="blank">
         <S.Icon src ={icon_github} />
         </a>
@@ -23,5 +24,13 @@ const ProjectsCard = ({image, deploymentLink, title, description, githubLink}) =
   </S.ServicesCardContainer>
 );
 
+ProjectsCard.propTypes = {
+  image: PropTypes.string,
+  deploymentLink: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  githubLink: PropTypes.string,
+  noGithub: PropTypes.bool,
+};
 
 export default ProjectsCard;

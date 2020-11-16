@@ -5,6 +5,7 @@ import ProjectsCard from '../ProjectsCard/ProjectsCard'
 import trafalgar_preview from '../../assets/img/trafalgar_preview.png'
 import gatsby_site_preview from '../../assets/img/gatsby_site_preview.png'
 import eState_preview from '../../assets/img/eState_preview.png'
+import labranda_preview from '../../assets/img/labranda_preview.png'
 
 const Projects = ()  => {
 
@@ -22,12 +23,19 @@ const Projects = ()  => {
     <S.Wrapper>
  <S.ProjectsContainer>
  <ProjectsCard
+     image={labranda_preview}
+     deploymentLink="https://www.labranda.com/en/hotel/labranda-bahia-de-lobos-26221"
+     title="Labranda Hotels"
+     description="One of the last work projects, a booking portal for the Labranda hotels "
+     noGithub
+     />
+ {/* <ProjectsCard
      image={trafalgar_preview}
      deploymentLink="https://healthcare-homepage.web.app"
      title="Healthcare landing page"
      description="Custom design implementation for a Homepage created in React using Styled Components. Deployed with Firebase."
      githubLink="https://github.com/danielasofrone/healthcare-landing-page"
-     />
+     /> */}
   <ProjectsCard
      image={gatsby_site_preview}
      deploymentLink="https://the-content-full-gatsby.netlify.app"
@@ -42,6 +50,7 @@ const Projects = ()  => {
      description="Custom design implentation in ReactJs using Styled Components. Deployed with Firebase. "
      githubLink="https://github.com/danielasofrone/e-State"
      />
+   
  </S.ProjectsContainer>
 
     </S.Wrapper>
