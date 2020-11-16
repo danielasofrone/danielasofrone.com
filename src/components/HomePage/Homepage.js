@@ -9,8 +9,8 @@ const Homepage = ()  => {
   return (
     <S.Wrapper>
      <Introduction />
-      <ImageGrid />
       <Projects />
+      <ImageGrid />
       <Footer />
     </S.Wrapper>
   )

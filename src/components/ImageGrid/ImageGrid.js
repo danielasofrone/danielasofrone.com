@@ -41,7 +41,6 @@ export default function ImageGridList() {
       </GridList>
     </div>
       </a>
-    
     </S.Wrapper>
   );
 }
