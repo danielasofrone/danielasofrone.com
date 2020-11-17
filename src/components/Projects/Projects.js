@@ -6,6 +6,8 @@ import trafalgar_preview from '../../assets/img/trafalgar_preview.png'
 import gatsby_site_preview from '../../assets/img/gatsby_site_preview.png'
 import eState_preview from '../../assets/img/eState_preview.png'
 import labranda_preview from '../../assets/img/labranda_preview.png'
+import event_preview from '../../assets/img/event_preview.png'
+import feedback_preview from '../../assets/img/feedback_preview.png'
 
 const Projects = ()  => {
 
@@ -26,16 +28,16 @@ const Projects = ()  => {
      image={labranda_preview}
      deploymentLink="https://www.labranda.com/en/hotel/labranda-bahia-de-lobos-26221"
      title="Labranda Hotels"
-     description="One of the last work projects, a booking portal for the Labranda hotels "
+     description="One of my last work projects, a booking portal for the Labranda hotels, where I created most of the components."
      noGithub
      />
- {/* <ProjectsCard
+ <ProjectsCard
      image={trafalgar_preview}
      deploymentLink="https://healthcare-homepage.web.app"
      title="Healthcare landing page"
      description="Custom design implementation for a Homepage created in React using Styled Components. Deployed with Firebase."
      githubLink="https://github.com/danielasofrone/healthcare-landing-page"
-     /> */}
+     />
   <ProjectsCard
      image={gatsby_site_preview}
      deploymentLink="https://the-content-full-gatsby.netlify.app"
@@ -50,9 +52,21 @@ const Projects = ()  => {
      description="Custom design implentation in ReactJs using Styled Components. Deployed with Firebase. "
      githubLink="https://github.com/danielasofrone/e-State"
      />
-   
+    <ProjectsCard
+     image={feedback_preview}
+     deploymentLink="https://thefeedbackform.herokuapp.com"
+     title="Feedback form"
+     description="Radio button based selection form. ReactJs, Styled Components, Contenful Management API. Deployed with Heroku. "
+     githubLink="https://github.com/danielasofrone/Feedback-Form"
+     />
+     <ProjectsCard
+     image={event_preview}
+     deploymentLink="https://github.com/danielasofrone/event-creator"
+     title="Event creator"
+     description="Event creating app, displays the existing participants, add own event, login. React forms, NextJs, styled components, axios."
+     githubLink="https://github.com/danielasofrone/event-creator"
+     />
  </S.ProjectsContainer>
-
     </S.Wrapper>
     </>
   )

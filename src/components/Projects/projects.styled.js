@@ -16,7 +16,6 @@ align-items: center;
   }
 `;
 
-
 export const TitleContainer = styled.div`
 margin: 0 10%;
 `;
