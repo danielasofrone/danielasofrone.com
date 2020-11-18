@@ -49,7 +49,7 @@ const Projects = ()  => {
      image={eState_preview}
      deploymentLink="https://e-state-df441.web.app/"
      title="Imobiliar market"
-     description="Custom design implentation in ReactJs using Styled Components. Deployed with Firebase. "
+     description="Custom design implentation in ReactJs using Styled Components. Used filters and  query strings. Deployed with Firebase. "
      githubLink="https://github.com/danielasofrone/e-State"
      />
     <ProjectsCard

@@ -27,7 +27,7 @@ export default function ImageGridList() {
         Visuals
       </S.SectionTitle>
       <S.Subtitle>
-        <p>I also have a passion for photography, especially portrets and landscapes. For pictures, you can visit my</p>
+        <p>I also have a passion for photography, especially portraits and landscapes. For pictures, you can visit my</p>
      <a href="https://www.flickr.com/photos/steepwater" target="blank">Flickr account.</a>
       </S.Subtitle>
       <a href="https://www.flickr.com/photos/steepwater" target="blank">
