@@ -54,10 +54,20 @@ export const FieldHolder = styled.div`
   float: left;
   margin-bottom: 10px;
 `;
+
 export const ButtonContainer= styled.div`
   width: 100%;
   float: left;
   margin-top: 20px;
   margin-bottom: 50px;
   text-align: center;
+`;
+
+export const AlertMessage= styled.div`
+  width: 100%;
+  float: left;
+  padding: 20px;
+  color: rgb(250, 179, 174);
+  border: 1px solid ${({type}) => type ==='error' ? '#f44336' : 'green'};
+  border-radius: 4px;
 `;

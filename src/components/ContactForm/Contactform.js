@@ -6,7 +6,7 @@ import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import { withNamespaces } from 'react-i18next';
 import emailjs, { init } from 'emailjs-com';
-// import {formValidation} from '../utils'
+import {formValidation} from '../utils'
 init(process.env.REACT_APP_USER_ID);
 
 const useStyles = makeStyles((theme) => ({
@@ -23,7 +23,7 @@ const initialState = {
   email: '',
   message: '',
   status: "idle",
-  feedbackMessage: '',
+  feedbackMessage: [],
 }
 
 
@@ -31,17 +31,10 @@ const reducer = (state, action) => {
   switch (action.type) {
     case 'updateField': {
  return {
-   ...state,
-   [action.fieldName]: action.payload
-     }
+      ...state,
+      [action.fieldName]: action.payload
+  }
     }
-    // case 'validate': {
-    //   return {
-    //     ...state,
-    //     status: 'validate',
-    //     [action.errors]: action.payLoad,
-    //       }
-    //      }
     case 'success': {
      return {
        ...state,
@@ -49,20 +42,21 @@ const reducer = (state, action) => {
       name: '',
       email: '',
       message: '',
-         }
+      feedbackMessage: ['Message sent']
+      }
         }
         case 'error': {
          return {
            ...state,
           status: 'error',
-          feedbackMessage: 'Something went wrong'
+          feedbackMessage: action.payload
              }
             }
             case 'loading': {
               return {
                 ...state,
                status: 'loading',
-               feedbackMessage: ''
+               feedbackMessage: []
                   }
                  }
     default: {
@@ -77,19 +71,23 @@ const ContactForm = ({t})  => {
 const handleSendForm = (evt) => {
   evt.preventDefault();
 
-  // dispatch({
-  //   type: 'validate',
-  //   error: feedbackMessage,
-  // })
-
   dispatch({
     type: 'loading',
   })
+
+  const {status: validationStatus, feedbackMessage: validationMessage} = formValidation({ name, message, email})
+
+  if (validationStatus === 'error') {
+    dispatch({
+      type: 'error',
+      payload: validationMessage
+    })
+    return;
+  }
+
   const templateParams = {
     name, message, email
   };
-
-
 
 emailjs.send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, templateParams)
     .then(function(response) {
@@ -105,7 +103,7 @@ emailjs.send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID
     });
 
 }
-const handleOnChange = ({ target: {name,value, feedbackMessage}}) => {
+const handleOnChange = ({ target: {name,value}}) => {
   dispatch({
     type: 'updateField',
     fieldName: name,
@@ -119,6 +117,12 @@ const handleOnChange = ({ target: {name,value, feedbackMessage}}) => {
           <S.SectionTitle isSmall>
           {t('contact.form.title')}
          </S.SectionTitle>
+
+      {feedbackMessage.length >= 1 &&
+         <S.AlertMessage type={status} >
+         {feedbackMessage.map(message => <p key={message}>{message}</p>)}
+         </S.AlertMessage>
+      }
       <S.FormContainer>
       <form noValidate autoComplete="off" className={classes.root}>
         <S.FieldHolder>
@@ -129,29 +133,24 @@ const handleOnChange = ({ target: {name,value, feedbackMessage}}) => {
              type="text"
              value={name}
              name="name"
-             helperText={feedbackMessage}
              onChange={(evt) => handleOnChange(evt)}
           /></S.FieldHolder>
         <S.FieldHolder>
           <TextField
-            id="outlined-basic"
             variant="outlined"
             label="E-mail"
             type="text"
             value={email}
             name="email"
-            helperText={feedbackMessage}
             onChange={(evt) => handleOnChange(evt)}
           /></S.FieldHolder>
           <S.FieldHolder>
           <TextareaAutosize
-            id="outlined-multiline-static"
             variant="outlined"
             label= {t('contact.form.message')}
             placeholder="Message"
             value={message}
             name="message"
-            helperText={feedbackMessage}
             onChange={(evt) => handleOnChange(evt)}
            />
           </S.FieldHolder>
@@ -161,7 +160,6 @@ const handleOnChange = ({ target: {name,value, feedbackMessage}}) => {
             </Button>
             </S.ButtonContainer>
            <div>
-           {feedbackMessage && feedbackMessage}
            </div>
         </form>
         </S.FormContainer>

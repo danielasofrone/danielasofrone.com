@@ -1,27 +1,25 @@
 function validateEmail(email) {
-  if (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email)) {return true;}
+  if (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+    return true;
+   }
   return false;
   }
 
-  export const formValidation = ({name, message, email, feedbackMessage}) => {
-     feedbackMessage = "";
-     const isNameValid = (name !== "");
-     const isMessageValid = ( message !== "");
+  export const formValidation = (inputs) => {
+     let status = "success";
+     let feedbackMessage = [];
+     const keys = Object.keys(inputs)
 
-   if (!isNameValid) {
-    feedbackMessage = "This field can't be empty";
+for (const key of keys) {
+  if (inputs[key] === '') {
+    status = "error";
+    feedbackMessage.push(`The field ${key} is required`)
+   } else if ( key === 'email' && !validateEmail(inputs[key])) {
+     status = 'error';
+     feedbackMessage.push('Please provide a valid email')
+   }
   }
-  if (!validateEmail(email)) {
-    feedbackMessage = "Email is not valid, please try again.";
-  }
-  if (email === "") {
-    feedbackMessage = "This field can't be empty";
-  }
-  if (!isMessageValid) {
-    feedbackMessage = "This field can't be empty";
-  }
-  else {
-    feedbackMessage = "Message sent";
-  }
+   return {
+   feedbackMessage,
+   status}
   };
-  
