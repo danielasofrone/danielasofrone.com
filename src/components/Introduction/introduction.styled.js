@@ -27,24 +27,21 @@ export const SectionTitle = styled.div`
   vertical-align: middle;
   width: 10%;
 }
-
 :before {
   right: 0.5em;
   margin-left: -50%;
 }
-
 :after {
   left: 0.5em;
   margin-right: -50%;
 }
 @media (min-width: 576px) {
-  margin: ${({ isSmall }) => (isSmall ? "50px 0 35px 0" : "50px 0;")};
+  margin: ${({ isSmall }) => (isSmall ? "60px 0 35px 0" : "60px 0;")};
   font-size: 2rem;
   }
   @media (min-width: 768px) {
     font-size: 2.5rem;
   }
-
 `;
 
 export const Subtitle = styled.div`

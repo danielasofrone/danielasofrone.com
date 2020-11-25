@@ -4,6 +4,7 @@ import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import images from './images.json'
 import * as S from '../Introduction/introduction.styled'
+import { withNamespaces } from 'react-i18next';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -18,17 +19,18 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export default function ImageGridList() {
+const ImageGridList = ({t}) => {
+
   const classes = useStyles();
 
   return (
     <S.Wrapper isNarrow>
      <S.SectionTitle isSmall>
-        Visuals
+     {t('visuals')}
       </S.SectionTitle>
       <S.Subtitle>
-        <p>I also have a passion for photography, especially portraits and landscapes. For pictures, you can visit my</p>
-     <a href="https://www.flickr.com/photos/steepwater" target="blank">Flickr account.</a>
+        <p>{t('visuals.text.one')}</p>
+     <a href="https://www.flickr.com/photos/steepwater" target="blank">  {t('visuals.text.two')}</a>
       </S.Subtitle>
       <a href="https://www.flickr.com/photos/steepwater" target="blank">
       <div className={classes.root}>
@@ -44,3 +46,5 @@ export default function ImageGridList() {
     </S.Wrapper>
   );
 }
+
+export default withNamespaces()(ImageGridList);

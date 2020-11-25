@@ -11,7 +11,9 @@ export const IconsContainer = styled.div`
   display: flex;
   flex-direction: row;
   margin: 100px 0;
+  padding-top: 50px;
   justify-content: center;
+  clear: both;
 `;
 
 export const Icon = styled.img`
@@ -28,4 +30,8 @@ export const Icon = styled.img`
       opacity: 1;
     }
   }
+`;
+
+export const DropdownContainer = styled.div`
+ 
 `;
