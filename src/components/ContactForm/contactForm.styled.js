@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
 export const SectionTitle = styled.div`
   margin: 20px 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Chivo', sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
   letter-spacing: -0.03em;

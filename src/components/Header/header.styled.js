@@ -10,7 +10,7 @@ export const Parallax = styled.div`
     text-align: center;
     color: #fff;
     font-size: 2.5rem;
-    font-family: "PT Serif", serif;
+    font-family: 'Chivo', sans-serif;
     background-color: transparent;
     background-attachment: fixed;
     background-position: center;
@@ -24,7 +24,21 @@ export const Parallax = styled.div`
 
 export const CenteredText = styled.div`
   position: absolute;
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Chivo', sans-serif;
+  color: #fff;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+`;
+
+
+export const NavBarHolder = styled.div`
+  position: absolute;
+  top: 8%;
+  right: 1%;
+  @media (min-width: 576px) {
+    right: 8%;
+  }
 `;

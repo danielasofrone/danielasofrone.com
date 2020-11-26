@@ -11,9 +11,12 @@ import i18n from '../../i18n';
 import { withNamespaces } from 'react-i18next';
 import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   formControl: {
-    margin: "5px",
+    margin: "0",
+    [theme.breakpoints.up('sm')]: {
+      margin: "5px",
+    },
   },
 }));
 

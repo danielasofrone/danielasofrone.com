@@ -16,7 +16,7 @@ const Projects = ({t})  => {
     <>
   <S.TitleContainer>
   <C.SectionTitle isSmall>
-  {t('selected.projects.title')}
+  <a id="projects">{t('selected.projects.title')}</a> 
    </C.SectionTitle>
  <C.Subtitle>
    <p>{t('selected.projects.text.one')}</p>

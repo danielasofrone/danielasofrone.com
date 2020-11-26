@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 export const SectionTitle = styled.div`
   margin: ${({ isSmall }) => (isSmall ? "20px 0 " : "40px 0;")};
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Chivo', sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
   letter-spacing: -0.03em;
@@ -48,7 +48,7 @@ export const Subtitle = styled.div`
   margin-bottom: 40px;
   white-space: normal;
   text-align: center;
-  font-family: 'PT Serif', serif;
+  font-family: 'Chivo', sans-serif;
   font-size: 1rem;
   color: #344854;
   a {
@@ -64,7 +64,7 @@ export const Subtitle = styled.div`
 export const DescriptionContainer = styled.div`
   text-align: justify;
   margin-top: 30px;
-  font-family: 'PT Serif', serif;
+  font-family: 'Chivo', sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: -0.03em;

@@ -17,10 +17,10 @@ export const IconsContainer = styled.div`
 `;
 
 export const Icon = styled.img`
-  width: ${({ isSmall }) => (isSmall ? "30px" : "38px")};
-  height: ${({ isSmall }) => (isSmall ? "30px" : "38px")};
+  width: ${({ isSmall }) => (isSmall ? "23px" : "30px")};
+  height: ${({ isSmall }) => (isSmall ? "23px" : "30px")};
   margin-top: ${({ isSmall }) => (isSmall ? "5px" : "")};
-  margin-right: 30px;
+  margin-right: 25px;
   cursor: pointer;
   &:hover,
   &:focus {
@@ -29,6 +29,11 @@ export const Icon = styled.img`
     &::after {
       opacity: 1;
     }
+  }
+  @media (min-width: 576px) {
+    width: ${({ isSmall }) => (isSmall ? "30px" : "38px")};
+    height: ${({ isSmall }) => (isSmall ? "30px" : "38px")};
+    margin-right: 30px;
   }
 `;
 

@@ -32,7 +32,7 @@ export const TextContainer = styled.div`
 `;
 
 export const ServicesCardTitle = styled.div`
-  font-family: 'Roboto', sans-serif;
+font-family: 'Chivo', sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 56px;
@@ -50,7 +50,7 @@ export const ServicesCardTitle = styled.div`
 `;
 
 export const ServicesCardDescription = styled.div`
-  font-family:'PT Serif', serif;
+  font-family: 'Chivo', sans-serif;
   font-weight: 300;
   font-size: 1rem;
   line-height: 28px;
