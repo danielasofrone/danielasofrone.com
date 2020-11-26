@@ -19,15 +19,10 @@ const useStyles = makeStyles(() => ({
 
 const Footer = ({t})  => {
   const classes = useStyles();
-  // const [language, setLanguage] = React.useState('');
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   }
-
-  // const handleChange = (event) => {
-  //   setLanguage(event.target.value);
-  // };
 
   return (
     <S.Wrapper>
@@ -47,14 +42,13 @@ const Footer = ({t})  => {
         </a>
         <FormControl className={classes.formControl}>
         <Select
-          onChange={() => changeLanguage('de')}
+          value={'en'}
+          onChange={(evt) => changeLanguage(evt.target.value)}
           displayEmpty
-          inputProps={{ 'aria-label': 'Without label' }}
+          inputProps={{ 'aria-label': 'Without label'}}
         >
-          <MenuItem value="">
-            <>EN</>
-          </MenuItem>
-          <MenuItem value={20}>DE</MenuItem>
+         <MenuItem value={'en'}>EN</MenuItem>
+         <MenuItem value={'de'}>DE</MenuItem>
         </Select>
       </FormControl>
       </S.IconsContainer>

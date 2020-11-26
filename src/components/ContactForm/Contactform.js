@@ -156,7 +156,7 @@ const handleOnChange = ({ target: {name,value}}) => {
           </S.FieldHolder>
           <S.ButtonContainer>
           <Button variant="outlined" onClick={handleSendForm}>
-            {status === 'loading' ? "Sending..." : 'Send'}
+            {status === 'loading' ? t('contact.form.sending') : t('contact.form.send')}
             </Button>
             </S.ButtonContainer>
            <div>
@@ -166,6 +166,5 @@ const handleOnChange = ({ target: {name,value}}) => {
     </S.Wrapper>
   )
 }
-
 
 export default withNamespaces()(ContactForm);

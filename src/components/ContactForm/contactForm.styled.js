@@ -64,10 +64,13 @@ export const ButtonContainer= styled.div`
 `;
 
 export const AlertMessage= styled.div`
-  width: 100%;
-  float: left;
-  padding: 20px;
-  color: rgb(250, 179, 174);
-  border: 1px solid ${({type}) => type ==='error' ? '#f44336' : 'green'};
+  width: auto;
+  min-height: 20px;
+  padding: 10px;
+  text-align: center;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  color: ${({type}) => type ==='error' ? '#f44336' : '#004620'};
+  border: 2px solid ${({type}) => type ==='error' ? '#f44336' : '#004620'};
   border-radius: 4px;
 `;
