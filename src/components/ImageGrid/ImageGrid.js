@@ -26,7 +26,7 @@ const ImageGridList = ({t}) => {
   return (
     <S.Wrapper isNarrow>
      <S.SectionTitle isSmall>
-     {t('visuals')}
+     <a id="visuals">{t('visuals')}</a> 
       </S.SectionTitle>
       <S.Subtitle>
         <p>{t('visuals.text.one')}</p>

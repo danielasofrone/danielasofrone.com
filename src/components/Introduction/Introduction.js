@@ -6,7 +6,7 @@ const Introduction = ({t})  => {
   return (
     <S.Wrapper>
       <S.SectionTitle>
-      {t('about')}
+      <a id="about">{t('about')}</a> 
       </S.SectionTitle>
       <S.DescriptionContainer>
           <p> {t('introduction.text.one')}</p>

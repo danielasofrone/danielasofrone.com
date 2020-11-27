@@ -115,9 +115,8 @@ const handleOnChange = ({ target: {name,value}}) => {
   return (
     <S.Wrapper>
           <S.SectionTitle isSmall>
-          {t('contact.form.title')}
+          <a id="contact">{t('contact.form.title')}</a> 
          </S.SectionTitle>
-
       {feedbackMessage.length >= 1 &&
          <S.AlertMessage type={status} >
          {feedbackMessage.map(message => <p key={message}>{message}</p>)}
