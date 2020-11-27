@@ -16,10 +16,10 @@ export const Parallax = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    @media (max-width: 576px) {
+    /* @media (max-width: 576px) {
       background-attachment: scroll;
       font-size: 1.5rem;
-  }
+  } */
 `;
 
 export const CenteredText = styled.div`
@@ -36,9 +36,9 @@ export const CenteredText = styled.div`
 
 export const NavBarHolder = styled.div`
   position: absolute;
-  top: 8%;
-  right: 1%;
-  @media (min-width: 576px) {
-    right: 8%;
+  top: 5%;
+  right: 8%;
+  @media (min-width: 768px) {
+    top: 8%;
   }
 `;

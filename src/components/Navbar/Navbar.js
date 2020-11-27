@@ -1,10 +1,14 @@
 import React from 'react'
 import * as S from './navbar.styled'
 import { withNamespaces } from 'react-i18next';
+import MenuIcon from '@material-ui/icons/Menu';
 
 const Navbar = ({t}) => {
   return (
     <S.NavbarWrapper>
+      <S.BurgerMenu>
+        <MenuIcon style={{ color:" #fff" }} fontSize="large" />
+      </S.BurgerMenu>
     <S.NavbarItem>
     <a href="#about"> {t('about')}</a>
       </S.NavbarItem>

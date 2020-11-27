@@ -10,25 +10,33 @@ export const NavbarWrapper = styled.div`
 `;
 
 export const NavbarItem = styled.div`
-  margin-left: 17px;
-a {
-  font-family: 'Chivo', sans-serif;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 0.9rem;
-  letter-spacing: 0.1em;
-  color: #fff;
-  /* opacity: 0.9; */
-  text-decoration: none;
-  cursor: pointer;
-  :hover {
-    opacity: 1;
-    border-bottom: 1px solid #fff;
-    margin-bottom: 5px;
-  }
-  @media (min-width: 576px) {
-    font-size: 0.875rem;
+  display: none;
+  @media (min-width: 768px) {
     margin-left: 20px;
+    display: block;
+    a {
+      font-family: 'Chivo', sans-serif;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 0.875rem;
+      letter-spacing: 0.1em;
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+      :hover {
+        opacity: 1;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 5px;
+        }
+        }
+      }
+`;
+
+export const BurgerMenu = styled.div`
+  display: block;
+  margin-right: 15%;
+  cursor: pointer;
+@media (min-width: 768px) {
+    display: none;
   }
-}
 `;
