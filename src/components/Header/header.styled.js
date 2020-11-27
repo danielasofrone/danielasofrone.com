@@ -1,8 +1,5 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
-`;
-
 export const Parallax = styled.div`
     background-image: url("https://live.staticflickr.com/3803/33269203366_888aa81cbd_h.jpg");
     min-height: 700px;
