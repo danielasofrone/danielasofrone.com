@@ -5,7 +5,6 @@ export const Wrapper = styled.div`
  margin: ${({ isNarrow }) => (isNarrow ? "0 5%" : "0 10%")};
 @media (min-width: 576px) {
   margin: ${({ isNarrow }) => (isNarrow ? "0 10%" : "0 25%")};
- 
   }
 `;
 
@@ -83,6 +82,18 @@ export const DescriptionContainer = styled.div`
     margin-top: 50px;
     font-size: 1.25rem;
     line-height: 2rem;
+    }
+    .fade-in-section {
+      opacity: 0;
+      transform: translateY(20vh);
+      visibility: hidden;
+      transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+      will-change: opacity, visibility;
+    }
+    .fade-in-section.is-visible {
+      opacity: 1;
+      transform: none;
+      visibility: visible;
     }
 `;
 
