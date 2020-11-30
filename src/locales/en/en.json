@@ -15,7 +15,7 @@
   "gatsby.title": "Gatsby - Contentful blog",
   "gatsby.description": "React application created using GatsbyJs, GraphQL and Contentful. Deployed with Netlify.",
   "estate.title": "Real estate market",
-  "estate.description": "Custom design implentation in ReactJs using Styled Components. Used filters and  query strings. Deployed with Firebase.",
+  "estate.description": "Custom design implementation in ReactJs. Used filters and  query strings. Deployed with Firebase.",
   "feedback.title": "Feedback form",
   "feedback.description": "Radio button based selection form. ReactJs, Styled Components, Contenful Management API. Deployed with Heroku.",
   "event.creator.title": "Event creator",
