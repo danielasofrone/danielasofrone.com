@@ -13,7 +13,7 @@ export const ImageGridContainer = styled.div`
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 4px;
   @media (min-width: 576px) {
     margin: 0;
   }
@@ -22,8 +22,8 @@ export const ImageGridContainer = styled.div`
 export const ImageGridColumn = styled.div`
   flex: 100%;
   max-width: 100%;
-  padding: 0 4px;
-  background-color: #000;
+  padding: 4px;
+  background-color: #222;
   @media (min-width: 576px) {
     flex: 35%;
     max-width: 35%;
@@ -33,21 +33,27 @@ export const ImageGridColumn = styled.div`
     max-width: 25%;
   }
    img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-  &:hover,
-  &:focus {
-    transform: scale3d(1.040, 1.040, 1);
+      vertical-align: middle;
+      width: 100%;
+      transition: all 0.2s linear;
+      &:hover,
+      &:focus {
+        transform: scale3d(1.040, 1.040, 1);
 
-    &::after {
-      opacity: 1;
-    }
+        &::after {
+          opacity: 1;
+        }
+      }
+      &.zoomIn {
+        transform: initial;
+        @media (min-width: 576px) {
+          transform: scale3d(2, 2, 1);
   }
-}
+      }
+    }
 `
 export const SectionTitle = styled.div`
-  margin: ${({ isSmall }) => (isSmall ? "20px 0 " : "40px 0;")};
+  margin: ${({ isSmall }) => (isSmall ? "20px 0 " : "40px 0")};
   text-align: center;
   font-family: 'Chivo', sans-serif;
   font-weight: 500;

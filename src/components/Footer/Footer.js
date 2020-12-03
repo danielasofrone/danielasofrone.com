@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import * as S from './footer.styled'
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
@@ -21,9 +21,11 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Footer = ({t})  => {
+  const [currentLanguage, setCurrentLanguage] = useState('en')
   const classes = useStyles();
 
   const changeLanguage = (lng) => {
+    setCurrentLanguage(lng)
     i18n.changeLanguage(lng);
   }
 
@@ -45,7 +47,7 @@ const Footer = ({t})  => {
         </a>
         <FormControl className={classes.formControl}>
         <Select
-          value={'en'}
+          value={currentLanguage}
           onChange={(evt) => changeLanguage(evt.target.value)}
           displayEmpty
           inputProps={{ 'aria-label': 'Without label'}}
