@@ -29,3 +29,6 @@ i18n
 
 export default i18n;
 
+const t = i18n.t.bind(i18n);
+export { t };
+

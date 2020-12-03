@@ -26,6 +26,11 @@
   "contact.form.title": "Lass uns reden",
   "contact.form.message": "Nachricht",
   "contact.form.send": "Senden",
-  "contact.form.sending": "Es wird gesendet..."
-
+  "contact.form.sending": "Es wird gesendet...",
+  "contact.form.required": "ist erforderlich",
+  "required.valid.email": "Das Format der E-Mail-Adresse ist ungültig",
+  "message.sent": "Die Nachricht wurde gesendet",
+  "contact.form[email]": "E-mail Adresse",
+  "contact.form[name]": "Name",
+  "contact.form[message]": "Nachricht"
 }

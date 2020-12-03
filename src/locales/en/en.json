@@ -26,5 +26,11 @@
   "contact.form.title": "Let's talk",
   "contact.form.message": "Message",
   "contact.form.send": "Send",
-  "contact.form.sending": "Sending..."
+  "contact.form.sending": "Sending...",
+  "contact.form.required": "is required",
+  "required.valid.email": "A valid email address is required",
+  "message.sent": "Message sent",
+  "contact.form[email]": "E-mail",
+  "contact.form[name]": "Name",
+  "contact.form[message]": "Message"
 }

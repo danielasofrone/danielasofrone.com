@@ -36,29 +36,29 @@ const reducer = (state, action) => {
   }
     }
     case 'success': {
-     return {
-       ...state,
+      return {
+      ...state,
       status: 'success',
       name: '',
       email: '',
       message: '',
-      feedbackMessage: ['Message sent']
+      feedbackMessage: [action.payload]
       }
+    }
+    case 'error': {
+      return {
+        ...state,
+        status: 'error',
+        feedbackMessage: action.payload
         }
-        case 'error': {
-         return {
-           ...state,
-          status: 'error',
-          feedbackMessage: action.payload
-             }
-            }
-            case 'loading': {
-              return {
-                ...state,
-               status: 'loading',
-               feedbackMessage: []
-                  }
-                 }
+   }
+    case 'loading': {
+      return {
+        ...state,
+        status: 'loading',
+        feedbackMessage: []
+        }
+  }
     default: {
      return state;
     }
@@ -91,12 +91,11 @@ const handleSendForm = (evt) => {
 
 emailjs.send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, templateParams)
     .then(function(response) {
-       console.log('SUCCESS!', response.status, response.text);
        dispatch({
         type: 'success',
+        payload: t('message.sent')
       })
     }, function(error) {
-       console.log('FAILED...', error);
        dispatch({
         type: 'error',
       })
@@ -115,7 +114,7 @@ const handleOnChange = ({ target: {name,value}}) => {
   return (
     <S.Wrapper>
           <S.SectionTitle isSmall>
-          <a id="contact">{t('contact.form.title')}</a> 
+          <a id="contact">{t('contact.form.title')}</a>
          </S.SectionTitle>
       {feedbackMessage.length >= 1 &&
          <S.AlertMessage type={status} >
@@ -133,7 +132,8 @@ const handleOnChange = ({ target: {name,value}}) => {
              value={name}
              name="name"
              onChange={(evt) => handleOnChange(evt)}
-          /></S.FieldHolder>
+           />
+        </S.FieldHolder>
         <S.FieldHolder>
           <TextField
             variant="outlined"
