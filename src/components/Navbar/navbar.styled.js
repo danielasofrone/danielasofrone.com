@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const NavbarWrapper = styled.div`
   display: flex;
@@ -6,21 +6,21 @@ export const NavbarWrapper = styled.div`
 `;
 
 export const BurgerMenuItem = styled.div`
-   display: block;
-    a {
-      font-family: 'Chivo', sans-serif;
-      text-transform: uppercase;
-      font-weight: 600;
-      font-size: 0.875rem;
-      letter-spacing: 0.1em;
-      color: #fff;
-      text-decoration: none;
-      cursor: pointer;
+  display: block;
+  a {
+    font-family: 'Chivo', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.875rem;
+    letter-spacing: 0.1em;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
   }
 `;
 
 export const NavbarItem = styled.div`
-   display: none;
+  display: none;
   @media (min-width: 768px) {
     margin-left: 20px;
     display: block;
@@ -33,20 +33,20 @@ export const NavbarItem = styled.div`
       color: #fff;
       text-decoration: none;
       cursor: pointer;
-    :hover {
-      opacity: 1;
-      border-bottom: 1px solid #fff;
-      margin-bottom: 5px;
+      :hover {
+        opacity: 1;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 5px;
+      }
     }
   }
-}
 `;
 
 export const BurgerMenu = styled.div`
   display: block;
   margin-right: 15%;
   cursor: pointer;
-@media (min-width: 768px) {
+  @media (min-width: 768px) {
     display: none;
   }
 `;
