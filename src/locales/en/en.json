@@ -32,5 +32,7 @@
   "message.sent": "Message sent",
   "contact.form[email]": "E-mail",
   "contact.form[name]": "Name",
-  "contact.form[message]": "Message"
+  "contact.form[message]": "Message",
+  "online.shop.title": "Online Shop",
+  "online.shop.description": "An online shop created with ReactJs, Styled Components, Redux. Used mock data and deployed with firebase"
 }

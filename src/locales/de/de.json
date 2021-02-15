@@ -32,5 +32,8 @@
   "message.sent": "Die Nachricht wurde gesendet",
   "contact.form[email]": "E-mail Adresse",
   "contact.form[name]": "Name",
-  "contact.form[message]": "Nachricht"
+  "contact.form[message]": "Nachricht",
+  "online.shop.title": "Online Shop",
+  "online.shop.description": "Online Shop: ReactJs, Styled Components, Redux. Dabei wurde mock data genutzt. Bereitgestellt mit Firebase."
+  
 }

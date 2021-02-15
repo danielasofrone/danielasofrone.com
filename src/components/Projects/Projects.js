@@ -1,15 +1,19 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import {withNamespaces} from 'react-i18next';
 import * as C from '../Introduction/introduction.styled';
 import ProjectsCard from '../ProjectsCard/ProjectsCard';
-import trafalgar_preview from '../../assets/img/trafalgar_preview.png';
-import gatsby_site_preview from '../../assets/img/gatsby_site_preview.png';
-import eState_preview from '../../assets/img/eState_preview.png';
-import labranda_preview from '../../assets/img/labranda_preview.png';
-import event_preview from '../../assets/img/event_preview.png';
-import feedback_preview from '../../assets/img/feedback_preview.png';
+import trafalgarPreview from '../../assets/img/trafalgarPreview.png';
+import gatsbySitePreview from '../../assets/img/gatsbySitePreview.png';
+import eStatePreview from '../../assets/img/eStatePreview.png';
+import labrandaPreview from '../../assets/img/labrandaPreview.png';
+import onlineShopPreview from '../../assets/img/onlineShopPreview.png';
+import feedbackPreview from '../../assets/img/feedbackPreview.png';
 import * as S from './projects.styled';
 
+// eslint-disable-next-line id-length
+// eslint-disable-next-line react/prop-types
+// eslint-disable-next-line id-length
 const Projects = ({t}) => {
   return (
     <>
@@ -26,46 +30,46 @@ const Projects = ({t}) => {
       <S.Wrapper>
         <S.ProjectsContainer>
           <ProjectsCard
-            image={labranda_preview}
+            image={labrandaPreview}
             deploymentLink="https://www.labranda.com/en/hotel/labranda-bahia-de-lobos-26221"
             title={t('labranda.title')}
             description={t('labranda.description')}
             noGithub
           />
           <ProjectsCard
-            image={trafalgar_preview}
+            image={trafalgarPreview}
             deploymentLink="https://healthcare-homepage.web.app"
             title={t('trafalga.title')}
             description={t('trafalgar.description')}
             githubLink="https://github.com/danielasofrone/healthcare-landing-page"
           />
           <ProjectsCard
-            image={gatsby_site_preview}
+            image={gatsbySitePreview}
             deploymentLink="https://the-content-full-gatsby.netlify.app"
             title={t('gatsby.title')}
             description={t('gatsby.description')}
             githubLink="https://github.com/danielasofrone/the-content-full-gatsby"
           />
           <ProjectsCard
-            image={eState_preview}
+            image={eStatePreview}
             deploymentLink="https://e-state-df441.web.app/"
             title={t('estate.title')}
             description={t('estate.description')}
             githubLink="https://github.com/danielasofrone/e-State"
           />
           <ProjectsCard
-            image={feedback_preview}
+            image={feedbackPreview}
             deploymentLink="https://thefeedbackform.herokuapp.com"
             title={t('feedback.title')}
             description={t('feedback.description')}
             githubLink="https://github.com/danielasofrone/Feedback-Form"
           />
           <ProjectsCard
-            image={event_preview}
-            deploymentLink="https://github.com/danielasofrone/event-creator"
-            title={t('event.creator.title')}
-            description={t('event.creator.description')}
-            githubLink="https://github.com/danielasofrone/event-creator"
+            image={onlineShopPreview}
+            deploymentLink="https://online-shop-d9548.web.app/"
+            title={t('online.shop.title')}
+            description={t('online.shop.description')}
+            githubLink="https://github.com/danielasofrone/online_shop"
           />
         </S.ProjectsContainer>
       </S.Wrapper>
