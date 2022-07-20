@@ -29,12 +29,12 @@ const Projects = ({t}) => {
       </S.TitleContainer>
       <S.Wrapper>
         <S.ProjectsContainer>
-          <ProjectsCard
-            image={labrandaPreview}
-            deploymentLink="https://www.labranda.com/en/hotel/labranda-bahia-de-lobos-26221"
-            title={t('labranda.title')}
-            description={t('labranda.description')}
-            noGithub
+        <ProjectsCard
+            image={eStatePreview}
+            deploymentLink="https://e-state-df441.web.app/"
+            title={t('estate.title')}
+            description={t('estate.description')}
+            githubLink="https://github.com/danielasofrone/e-State"
           />
           <ProjectsCard
             image={trafalgarPreview}
@@ -51,13 +51,6 @@ const Projects = ({t}) => {
             githubLink="https://github.com/danielasofrone/the-content-full-gatsby"
           />
           <ProjectsCard
-            image={eStatePreview}
-            deploymentLink="https://e-state-df441.web.app/"
-            title={t('estate.title')}
-            description={t('estate.description')}
-            githubLink="https://github.com/danielasofrone/e-State"
-          />
-          <ProjectsCard
             image={feedbackPreview}
             deploymentLink="https://thefeedbackform.herokuapp.com"
             title={t('feedback.title')}
@@ -70,6 +63,13 @@ const Projects = ({t}) => {
             title={t('online.shop.title')}
             description={t('online.shop.description')}
             githubLink="https://github.com/danielasofrone/online_shop"
+          />
+           <ProjectsCard
+            image={labrandaPreview}
+            deploymentLink="https://www.labranda.com/"
+            title={t('labranda.title')}
+            description={t('labranda.description')}
+            noGithub
           />
         </S.ProjectsContainer>
       </S.Wrapper>
