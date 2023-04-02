@@ -121,10 +121,10 @@ const ContactForm = ({t}) => {
         }
       );
   };
-  const handleOnChange = ({target: {value}}) => {
+  const handleOnChange = ({target: {value}}, fieldName) => {
     dispatch({
       type: 'updateField',
-      fieldName: name,
+      fieldName,
       payload: value,
     });
   };
@@ -155,7 +155,7 @@ const ContactForm = ({t}) => {
               type="text"
               value={name}
               name="name"
-              onChange={evt => handleOnChange(evt)}
+              onChange={evt => handleOnChange(evt, 'name')}
             />
           </S.FieldHolder>
           <S.FieldHolder>
@@ -165,7 +165,7 @@ const ContactForm = ({t}) => {
               type="text"
               value={email}
               name="email"
-              onChange={evt => handleOnChange(evt)}
+              onChange={evt => handleOnChange(evt, 'email')}
             />
           </S.FieldHolder>
           <S.FieldHolder>
@@ -175,7 +175,7 @@ const ContactForm = ({t}) => {
               placeholder="Message"
               value={message}
               name="message"
-              onChange={evt => handleOnChange(evt)}
+              onChange={evt => handleOnChange(evt, 'message')}
             />
           </S.FieldHolder>
           <S.ButtonContainer>
