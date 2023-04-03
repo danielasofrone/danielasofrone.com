@@ -33,6 +33,7 @@ export const ImageGridColumn = styled.div`
   }
   img {
     vertical-align: middle;
+    object-fit: contain;
     width: 100%;
     transition: all 0.2s linear;
     &:hover,
