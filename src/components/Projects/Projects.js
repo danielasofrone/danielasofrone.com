@@ -29,7 +29,7 @@ const Projects = ({t}) => {
       </S.TitleContainer>
       <S.Wrapper>
         <S.ProjectsContainer>
-        <ProjectsCard
+          <ProjectsCard
             image={eStatePreview}
             deploymentLink="https://e-state-df441.web.app/"
             title={t('estate.title')}
@@ -52,7 +52,7 @@ const Projects = ({t}) => {
           />
           <ProjectsCard
             image={feedbackPreview}
-            deploymentLink="https://thefeedbackform.herokuapp.com"
+            deploymentLink="https://feedback-form-ten.vercel.app"
             title={t('feedback.title')}
             description={t('feedback.description')}
             githubLink="https://github.com/danielasofrone/Feedback-Form"
@@ -64,7 +64,7 @@ const Projects = ({t}) => {
             description={t('online.shop.description')}
             githubLink="https://github.com/danielasofrone/online_shop"
           />
-           <ProjectsCard
+          <ProjectsCard
             image={labrandaPreview}
             deploymentLink="https://www.labranda.com/"
             title={t('labranda.title')}

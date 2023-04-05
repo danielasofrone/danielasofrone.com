@@ -17,7 +17,7 @@
   "estate.title": "Immobilienmarkt",
   "estate.description": "Implementierung eines benutzerdefinierten Designs: ReactJS, Styled Components, Filter, Suchfelder. Bereitgestellt mit Firebase.",
   "feedback.title": "Feedback Formular",
-  "feedback.description": "Optionsfeld-basiertes Auswahlformular. ReactJS,  Styled Components, Contenful Management API. Bereitgestellt mit Heroku.",
+  "feedback.description": "Optionsfeld-basiertes Auswahlformular. ReactJS,  Styled Components, Contenful Management API. Bereitgestellt mit Vercel.",
   "event.creator.title": "Event creator",
   "event.creator.description": "App zum Erstellen von Events, zeigt die Teilnehmer an, fügt neue Events hinzu und bietet eine Registrierungsfunktion. NextJS, Axios.",
   "visuals": "Visuals",

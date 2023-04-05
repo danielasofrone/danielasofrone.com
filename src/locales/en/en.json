@@ -17,7 +17,7 @@
   "estate.title": "Real estate market",
   "estate.description": "Custom design implementation in ReactJs. Used filters and  query strings. Deployed with Firebase.",
   "feedback.title": "Feedback form",
-  "feedback.description": "Radio button based selection form. ReactJs, Styled Components, Contenful Management API. Deployed with Heroku.",
+  "feedback.description": "Radio button based selection form. ReactJs, Styled Components, Contenful Management API. Deployed with Vercel.",
   "event.creator.title": "Event creator",
   "event.creator.description": "Event creating app, displays the existing participants, add own event, login. React forms, NextJs, styled components, axios.",
   "visuals": "Visuals",
