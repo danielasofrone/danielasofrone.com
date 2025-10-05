@@ -14,7 +14,7 @@ const Homepage = () => {
       <Introduction />
       <Projects />
       <ImageGrid />
-      <ContactForm />
+      {/* <ContactForm /> */}
       <Footer />
     </S.Wrapper>
   );
