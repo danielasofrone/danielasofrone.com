@@ -132,10 +132,7 @@ const ContactForm = ({t}) => {
   const classes = useStyles();
   return (
     <S.Wrapper>
-      <S.SectionTitle isSmall>
-        {/* eslint-disable-next-line react/forbid-dom-props */}
-        <a id="contact">{t('contact.form.title')}</a>
-      </S.SectionTitle>
+
       {feedbackMessage.length >= 1 && (
         // eslint-disable-next-line react/jsx-no-comment-textnodes
         <S.AlertMessage type={status}>

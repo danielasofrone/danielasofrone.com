@@ -69,11 +69,6 @@ const Navbar = ({t}) => {
               <a href="#visuals">{t('visuals')}</a>
             </MenuItem>
           </S.BurgerMenuItem>
-          <S.BurgerMenuItem>
-            <MenuItem onClick={handleClose}>
-              <a href="#contact">{t('contact.form.title')}</a>
-            </MenuItem>
-          </S.BurgerMenuItem>
         </Menu>
       </ThemeProvider>
 
@@ -85,9 +80,6 @@ const Navbar = ({t}) => {
       </S.NavbarItem>
       <S.NavbarItem>
         <a href="#visuals">{t('visuals')}</a>
-      </S.NavbarItem>
-      <S.NavbarItem>
-        <a href="#contact">{t('contact.form.title')}</a>
       </S.NavbarItem>
     </S.NavbarWrapper>
   );
