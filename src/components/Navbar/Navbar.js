@@ -59,14 +59,14 @@ const Navbar = ({t}) => {
               <a href="#about"> {t('about')}</a>
             </MenuItem>
           </S.BurgerMenuItem>
-          <S.BurgerMenuItem>
+           <S.BurgerMenuItem>
             <MenuItem onClick={handleClose}>
-              <a href="#projects">{t('selected.projects.title')}</a>
+              <a href="#writing">{t('writing')}</a>
             </MenuItem>
           </S.BurgerMenuItem>
           <S.BurgerMenuItem>
             <MenuItem onClick={handleClose}>
-              <a href="#visuals">{t('visuals')}</a>
+              <a href="#projects">{t('selected.projects.title')}</a>
             </MenuItem>
           </S.BurgerMenuItem>
         </Menu>

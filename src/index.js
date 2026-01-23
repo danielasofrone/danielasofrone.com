@@ -1,14 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './i18n';
-import {ParallaxProvider} from 'react-scroll-parallax';
-import HomePage from '../src/components/HomePage/Homepage';
+import App from './App';
 
 ReactDOM.render(
-  <ParallaxProvider>
-    <React.StrictMode>
-      <HomePage />
-    </React.StrictMode>
-  </ParallaxProvider>,
+  <App />,
   document.getElementById('root')
 );

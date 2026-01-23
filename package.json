@@ -11,8 +11,8 @@
     "eject": "react-scripts eject"
   },
   "overrides": {
-  "eslint": "8.57.0"
-},
+    "eslint": "8.57.0"
+  },
   "dependencies": {
     "@material-ui/core": "4.12.4",
     "@material-ui/icons": "4.11.3",
@@ -28,7 +28,7 @@
     "react-file-reader": "^1.1.4",
     "react-i18next": "^9.0.10",
     "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
+    "react-router-dom": "^6.30.3",
     "react-scripts": "5.0.1",
     "react-scroll-parallax": "^2.3.5",
     "sanitize.css": "^11.0.0",
