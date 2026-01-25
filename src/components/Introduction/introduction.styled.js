@@ -10,14 +10,13 @@ export const Wrapper = styled.div`
 export const SectionTitle = styled.div`
   margin: ${({isSmall}) => (isSmall ? '20px 0 ' : '40px 0;')};
   text-align: center;
-  font-family: 'Chivo', sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
   letter-spacing: -0.03em;
   color: #344854;
   :before,
   :after {
-    background-color: #000;
+    background-color: #344854;
     content: '';
     display: inline-block;
     height: 2px;
@@ -46,7 +45,6 @@ export const Subtitle = styled.div`
   margin-bottom: 40px;
   white-space: normal;
   text-align: center;
-  font-family: 'Chivo', sans-serif;
   font-size: 1rem;
   color: #344854;
   a {
@@ -61,11 +59,10 @@ export const Subtitle = styled.div`
 export const DescriptionContainer = styled.div`
   text-align: justify;
   margin-top: 30px;
-  font-family: 'Chivo', sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: -0.03em;
-  color: rgba(0, 0, 0, 0.8);
+  color: #344854;
   :after {
     content: '';
     display: inline-block;
@@ -80,18 +77,6 @@ export const DescriptionContainer = styled.div`
     margin-top: 50px;
     font-size: 1.25rem;
     line-height: 2rem;
-  }
-  .fade-in-section {
-    opacity: 0;
-    transform: translateY(20vh);
-    visibility: hidden;
-    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
-    will-change: opacity, visibility;
-  }
-  .fade-in-section.is-visible {
-    opacity: 1;
-    transform: none;
-    visibility: visible;
   }
 `;
 

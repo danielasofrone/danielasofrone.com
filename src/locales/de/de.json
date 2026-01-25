@@ -1,6 +1,13 @@
 {
   "greeting": "Hallo, ich bin Daniela.",
+  "hero.eyebrow": "Produkt · Systeme · Umsetzung",
+  "hero.title": "Daniela Sofrone",
+  "hero.role": "Produktmanager",
+  "hero.subtitle": "Ich arbeite an der Schnittstelle von Produktdenken, Design und Engineering – mit Fokus auf Klarheit, gute Entscheidungen und umsetzbare Lösungen.",
+  "hero.cta.secondary": "Über mich",
+  "hero.cta.primary": "Produktarbeit ansehen",
   "about": "Über mich",
+  "writing": "Artikel",
   "introduction.text.one": "Ich bin eine Product Managerin mit einem Hintergrund in der Softwareentwicklung.Ich helfe Teams dabei, komplexe Anforderungen in digitale Produkte zu übersetzen, die sowohl für die Nutzer als auch für das Unternehmen Sinn ergeben.",
   "introduction.text.two": "Meine Karriere habe ich in der Entwicklung begonnen, wo ich Code geschrieben und technische Herausforderungen gelöst habe. Mit der Zeit hat mich jedoch immer mehr das „Warum“ hinter dem, was wir bauen, interessiert – die Bedürfnisse der Nutzer zu verstehen, Stakeholder auf gemeinsame Ziele auszurichten und Produkte zu schaffen, die einen echten Unterschied machen.",
   "introduction.text.three": "Heute arbeite ich als Product Ownerin und bringe Menschen, Ideen und Technologie zusammen.Ich schaffe Struktur und Klarheit, damit Teams Produkte entwickeln können, die wirklich funktionieren – für die Nutzer und das Business. Ich habe an B2B- und B2C-Produkten gearbeitet – immer mit dem Ziel, Geschäftsziele, Nutzerbedürfnisse und technische Machbarkeit in Einklang zu bringen. Besonders schätze ich die Zusammenarbeit zwischen Business, Design und Entwicklung.Mein Hintergrund in QA und Frontend-Entwicklung hilft mir dabei, alle drei „Sprachen“ zu sprechen und gemeinsame Lösungen zu finden, wenn es komplex wird.",

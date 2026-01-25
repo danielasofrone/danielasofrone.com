@@ -8,7 +8,6 @@ export const NavbarWrapper = styled.div`
 export const BurgerMenuItem = styled.div`
   display: block;
   a {
-    font-family: 'Chivo', sans-serif;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 0.875rem;
@@ -25,7 +24,6 @@ export const NavbarItem = styled.div`
     margin-left: 20px;
     display: block;
     a {
-      font-family: 'Chivo', sans-serif;
       text-transform: uppercase;
       font-weight: 600;
       font-size: 0.875rem;

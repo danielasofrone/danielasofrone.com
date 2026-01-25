@@ -1,18 +1,8 @@
-import React, {useState, useRef, useEffect} from 'react';
-import {withNamespaces} from 'react-i18next';
+import React from 'react';
+import { withNamespaces } from 'react-i18next';
 import * as S from './introduction.styled';
 
-const Introduction = ({t}) => {
-  const [isVisible, setVisible] = useState(false);
-  const domRef = useRef();
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => setVisible(entry.isIntersecting));
-    });
-    observer.observe(domRef.current);
-  }, []);
-
+const Introduction = ({ t }) => {
   const paragraphs = [
     t('introduction.text.one'),
     t('introduction.text.two'),
@@ -21,21 +11,15 @@ const Introduction = ({t}) => {
   ];
 
   return (
-    <S.Wrapper>
+    <S.Wrapper id="about">
       <S.SectionTitle>
-        <a id="about">{t('about')}</a>
+        {t('about')}
       </S.SectionTitle>
+
       <S.DescriptionContainer>
-        <div
-          className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
-          ref={domRef}
-        >
-          {paragraphs.map(paragraph => (
-            <div key={paragraph}>
-              <p>{paragraph}</p>
-            </div>
-          ))}
-        </div>
+        {paragraphs.map(paragraph => (
+          <p key={paragraph}>{paragraph}</p>
+        ))}
       </S.DescriptionContainer>
     </S.Wrapper>
   );

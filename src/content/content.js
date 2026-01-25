@@ -6,7 +6,8 @@ export const featuredContent = [
     excerpt:
       "Why role confusion leads to poor decisions, and how agencies can shift toward product thinking without slowing down.",
     date: "08.01.2026",
-    readTime: "12 min"
+    readTime: "12 min",
+    bodyUrl: "/articles/po-vs-pm-agencies.md"
   },
   {
     type: "article",
@@ -15,6 +16,7 @@ export const featuredContent = [
     excerpt:
       "A reframing of agencies as systems with users, incentives, constraints, and feedback loops.",
     date: "16.09.2025",
-    readTime: "7 min"
+    readTime: "7 min",
+    bodyUrl: "/articles/digital-agency-as-a-product.md"
   }
 ];

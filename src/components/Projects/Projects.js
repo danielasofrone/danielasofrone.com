@@ -5,9 +5,6 @@ import * as C from '../Introduction/introduction.styled';
 import ProjectsCard from '../ProjectsCard/ProjectsCard';
 import trafalgarPreview from '../../assets/img/trafalgarPreview.png';
 import gatsbySitePreview from '../../assets/img/gatsbySitePreview.png';
-import eStatePreview from '../../assets/img/eStatePreview.png';
-import labrandaPreview from '../../assets/img/labrandaPreview.png';
-import onlineShopPreview from '../../assets/img/onlineShopPreview.png';
 import feedbackPreview from '../../assets/img/feedbackPreview.png';
 import * as S from './projects.styled';
 
@@ -30,13 +27,6 @@ const Projects = ({t}) => {
       <S.Wrapper>
         <S.ProjectsContainer>
           <ProjectsCard
-            image={eStatePreview}
-            deploymentLink="https://e-state-df441.web.app/"
-            title={t('estate.title')}
-            description={t('estate.description')}
-            githubLink="https://github.com/danielasofrone/e-State"
-          />
-          <ProjectsCard
             image={trafalgarPreview}
             deploymentLink="https://healthcare-homepage.web.app"
             title={t('trafalga.title')}
@@ -56,20 +46,6 @@ const Projects = ({t}) => {
             title={t('feedback.title')}
             description={t('feedback.description')}
             githubLink="https://github.com/danielasofrone/Feedback-Form"
-          />
-          <ProjectsCard
-            image={onlineShopPreview}
-            deploymentLink="https://online-shop-d9548.web.app/"
-            title={t('online.shop.title')}
-            description={t('online.shop.description')}
-            githubLink="https://github.com/danielasofrone/online_shop"
-          />
-          <ProjectsCard
-            image={labrandaPreview}
-            deploymentLink="https://www.labranda.com/"
-            title={t('labranda.title')}
-            description={t('labranda.description')}
-            noGithub
           />
         </S.ProjectsContainer>
       </S.Wrapper>

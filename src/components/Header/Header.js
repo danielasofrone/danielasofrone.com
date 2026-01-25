@@ -1,28 +1,56 @@
 import React from 'react';
-import {withNamespaces} from 'react-i18next';
-import {ParallaxBanner} from 'react-scroll-parallax';
+import { withNamespaces } from 'react-i18next';
 import Navbar from '../Navbar/Navbar';
 import * as S from './header.styled';
+import selfPortrait from '../../assets/img/selfPortrait.png';
 
-const Header = ({t}) => {
+const scrollToId = (id) => (e) => {
+  e.preventDefault();
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
+
+const Header = ({ t }) => {
   return (
-    <ParallaxBanner
-      layers={[
-        {
-          image:
-            'https://live.staticflickr.com/3803/33269203366_888aa81cbd_h.jpg',
-          amount: -0.2,
-        },
-      ]}
-      style={{
-        height: '750px',
-      }}
-    >
+    <S.HeroWrapper>
       <S.NavBarHolder>
         <Navbar />
       </S.NavBarHolder>
-      <S.CenteredText>{t('greeting')}</S.CenteredText>
-    </ParallaxBanner>
+
+      <S.Content>
+        <S.TextCol>
+          <S.Headline>
+        {t('hero.title', { defaultValue: 'Daniela Sofrone' })}
+            <S.Role>
+              {t('hero.role', { defaultValue: 'Product Manager' })}
+            </S.Role>
+          </S.Headline>
+
+          <S.Subheadline>
+            {t('hero.subtitle')}
+          </S.Subheadline>
+
+          <S.Actions>
+            <S.PrimaryButton href="#work" onClick={scrollToId('work')}>
+              {t('hero.cta.primary')}
+            </S.PrimaryButton>
+            <S.SecondaryButton href="#about" onClick={scrollToId('work')}>
+              {t('hero.cta.secondary')}
+            </S.SecondaryButton>
+          </S.Actions>
+        </S.TextCol>
+
+        <S.VisualCol>
+          <S.PhotoFrame>
+            <S.Photo
+              src={selfPortrait}
+              alt="Daniela Sofrone"
+            />
+          </S.PhotoFrame>
+        </S.VisualCol>
+      </S.Content>
+    </S.HeroWrapper>
   );
 };
 

@@ -6,10 +6,8 @@ import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import {withNamespaces} from 'react-i18next';
 import {makeStyles} from '@material-ui/core/styles';
-import icon_github from '../../assets/icons/icon_github.svg';
 import icon_linkedin from '../../assets/icons/icon_linkedin.svg';
 import icon_email from '../../assets/icons/icon_email.svg';
-import icon_flickr from '../../assets/icons/icon_flickr.svg';
 import i18n from '../../i18n';
 import * as S from './footer.styled';
 
@@ -40,17 +38,8 @@ const Footer = ({t}) => {
         >
           <S.Icon src={icon_linkedin}></S.Icon>
         </a>
-        <a
-          href="https://github.com/danielasofrone?tab=repositories"
-          target="blank"
-        >
-          <S.Icon src={icon_github} />
-        </a>
         <a href="mailto:danielasofrone.com@gmail.com" target="blank">
           <S.Icon src={icon_email} />
-        </a>
-        <a href="https://www.flickr.com/photos/steepwater/" target="blank">
-          <S.Icon src={icon_flickr} isSmall />
         </a>
         <FormControl className={classes.formControl}>
           <Select

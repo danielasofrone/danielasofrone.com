@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.section`
-  margin: 120px 0;
+export const Wrapper = styled.div.attrs({
+  id: 'work',
+})`
+    margin: 120px 0;
 `;
-
 export const TitleContainer = styled.div`
   margin: 0 10% 40px 10%;
 `;

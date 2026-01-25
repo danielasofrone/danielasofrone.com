@@ -1,6 +1,13 @@
 {
   "greeting": "Hi, I'm Daniela",
+  "hero.eyebrow": "Product · Systems · Delivery",
+  "hero.title": "Daniela Sofrone",
+  "hero.role": "Product Manager",
+  "hero.subtitle": "I bring product thinking into ambiguous projects — aligning stakeholders, defining the right problem, and shipping pragmatic solutions.",
+  "hero.cta.primary": "View product work",
+  "hero.cta.secondary": "About me",
   "about": "About me",
+  "writing": "Writing",
   "introduction.text.one": "I’m a Product Manager with a background in development. I help teams turn complex requirements into digital products that make sense for both users and the business.I started my career writing code and solving detailed technical problems. Over time, I became more interested in the why behind what we build — understanding user needs, aligning stakeholders, and creating products that have a real impact.",
   "introduction.text.two": "Today, I work as a Product Owner, focusing on bringing together people, ideas, and technology. I enjoy creating the structure and clarity that help teams build digital products that truly work for users and the business.",
   "introduction.text.three": "I’ve worked on B2B and B2C products — always balancing business goals, user needs, and technical feasibility. I enjoy connecting different perspectives: business stakeholders, designers, and developers. My background in QA and frontend development helps me speak all three “languages” and find common ground when things get complex.",

@@ -78,9 +78,6 @@ const Navbar = ({t}) => {
       <S.NavbarItem>
         <a href="#projects">{t('selected.projects.title')}</a>
       </S.NavbarItem>
-      <S.NavbarItem>
-        <a href="#visuals">{t('visuals')}</a>
-      </S.NavbarItem>
     </S.NavbarWrapper>
   );
 };

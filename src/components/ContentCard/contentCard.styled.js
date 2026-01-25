@@ -44,7 +44,6 @@ export const TextContainer = styled.div`
 
 export const Tag = styled.div`
   display: inline-block;
-  font-family: 'Chivo', sans-serif;
   font-weight: 700;
   font-size: 0.8rem;
   letter-spacing: 0.04em;
@@ -54,7 +53,6 @@ export const Tag = styled.div`
 `;
 
 export const Title = styled.div`
-  font-family: 'Chivo', sans-serif;
   font-weight: bold;
   font-size: 1.35rem;
   line-height: 1.4;
@@ -69,7 +67,6 @@ export const Title = styled.div`
 `;
 
 export const Meta = styled.div`
-  font-family: 'Chivo', sans-serif;
   font-weight: 300;
   font-size: 0.9rem;
   color: #677b8c;
@@ -77,7 +74,6 @@ export const Meta = styled.div`
 `;
 
 export const Excerpt = styled.div`
-  font-family: 'Chivo', sans-serif;
   font-weight: 300;
   font-size: 1rem;
   line-height: 28px;
@@ -97,7 +93,6 @@ export const FooterRow = styled.div`
 `;
 
 export const Cta = styled.div`
-  font-family: 'Chivo', sans-serif;
   font-weight: 700;
   font-size: 1rem;
   color: #344854;
