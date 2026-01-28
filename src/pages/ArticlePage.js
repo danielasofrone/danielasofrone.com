@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { withNamespaces } from 'react-i18next';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { featuredContent } from '../content/content';
 import * as S from './articlePage.styled';
 
-export default function ArticlePage() {
+function ArticlePage({ t }) {
   const { slug } = useParams();
   const article = featuredContent.find((a) => a.slug === slug);
 
@@ -31,6 +32,9 @@ export default function ArticlePage() {
     );
   }
 
+  const title = t(`articles.${slug}.title`, { defaultValue: slug });
+  const excerpt = t(`articles.${slug}.excerpt`, { defaultValue: '' });
+
   return (
     <S.Page>
       <S.Container>
@@ -38,7 +42,10 @@ export default function ArticlePage() {
           <Link to="/">← Home</Link>
         </S.TopRow>
 
-        <S.Title>{article.title}</S.Title>
+        <S.Title>{title}</S.Title>
+
+        {excerpt ? <S.Excerpt>{excerpt}</S.Excerpt> : null}
+
         <S.Meta>
           {article.date} · {article.readTime}
         </S.Meta>
@@ -52,3 +59,5 @@ export default function ArticlePage() {
     </S.Page>
   );
 }
+
+export default withNamespaces()(ArticlePage);

@@ -73,20 +73,25 @@ export const Meta = styled.div`
   margin-bottom: 14px;
 `;
 
-export const Excerpt = styled.div`
-  font-weight: 300;
-  font-size: 1rem;
-  line-height: 28px;
-  color: #677b8c;
-  border-bottom: 1px solid #e9ebee;
-  padding-bottom: 20px;
-
+export const Excerpt = styled.p`
+  margin-top: 0.75rem;
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.5;
 
   display: -webkit-box;
-  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
+
+  /* Default: mobile */
+  -webkit-line-clamp: 4;
+
+  /* Tablet / desktop: allow more space */
+  @media (min-width: 768px) {
+    -webkit-line-clamp: 5;
+  }
 `;
+
 
 export const FooterRow = styled.div`
   padding: 10px 25px 30px 25px;

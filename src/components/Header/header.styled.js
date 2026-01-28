@@ -1,9 +1,15 @@
 import styled from 'styled-components';
-
 export const HeroWrapper = styled.header`
   min-height: 90vh;
   background: linear-gradient(180deg, #fbfbfb 0%, #f3f4f6 100%);
   color: #111;
+  font-family: 'Roboto', sans-serif;
+
+  min-height: min(90vh, 760px);
+  @media (max-width: 1024px) {
+    min-height: auto;
+    padding-bottom: 2.5rem;
+  }
 `;
 
 export const NavBarHolder = styled.div`
@@ -29,9 +35,17 @@ export const Content = styled.div`
     padding: 2.5rem 1.5rem 3.5rem 1.5rem;
     gap: 2.25rem;
   }
+  @media (max-width: 1024px) {
+    max-width: 820px;
+  }
 `;
 
-export const TextCol = styled.div``;
+export const TextCol = styled.div`
+  @media (max-width: 1024px) {
+    margin: 0 auto;      
+    max-width: 680px;
+  }
+`;
 
 export const Headline = styled.h1`
   font-weight: 600;
@@ -63,6 +77,17 @@ export const Actions = styled.div`
   gap: 0.9rem;
   flex-wrap: wrap;
   margin-bottom: 1.25rem;
+display: flex;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+
+  @media (max-width: 1024px) {
+    justify-content: flex-start;
+  }
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 export const PrimaryButton = styled.a`
@@ -99,7 +124,7 @@ export const VisualCol = styled.div`
   justify-content: center;
 
   @media (max-width: 900px) {
-    justify-content: flex-start;
+    justify-content: center;
   }
 `;
 

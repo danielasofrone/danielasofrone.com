@@ -111,3 +111,10 @@ export const Prose = styled.article`
     margin: 2.5rem 0;
   }
 `;
+
+export const Excerpt = styled.p`
+  margin: 0.75rem 0 1.5rem 0;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #444;
+`;
