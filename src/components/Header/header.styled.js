@@ -131,7 +131,7 @@ export const VisualCol = styled.div`
 export const PhotoFrame = styled.div`
   width: min(360px, 70vw);
   aspect-ratio: 1 / 1;
-  border-radius: 24px;
+  border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0,0,0,0.10);
   border: 1px solid rgba(0,0,0,0.08);

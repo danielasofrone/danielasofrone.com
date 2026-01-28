@@ -1,3 +1,4 @@
+
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
@@ -17,6 +18,7 @@ export const CardContainer = styled.div`
   text-align: left;
   min-height: 420px;
   margin: 20px;
+  padding: 2rem; 
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.08);
   transition: box-shadow 200ms cubic-bezier(0.02, 0.01, 0.47, 1),
     transform 200ms cubic-bezier(0.02, 0.01, 0.47, 1);
@@ -36,11 +38,16 @@ export const CardImage = styled.img`
 `;
 
 export const TextContainer = styled.div`
-  padding: 20px 25px 0 25px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+  display: grid;
+  grid-template-rows:
+    auto   /* tag */
+    minmax(5.5rem, auto) /* title: reserve space */
+    auto   /* meta */
+    1fr;   /* excerpt */
+
+  row-gap: 0.5rem;
 `;
+
 
 export const Tag = styled.div`
   display: inline-block;
@@ -83,10 +90,8 @@ export const Excerpt = styled.p`
   -webkit-box-orient: vertical;
   overflow: hidden;
 
-  /* Default: mobile */
   -webkit-line-clamp: 4;
 
-  /* Tablet / desktop: allow more space */
   @media (min-width: 768px) {
     -webkit-line-clamp: 5;
   }
@@ -95,6 +100,7 @@ export const Excerpt = styled.p`
 
 export const FooterRow = styled.div`
   padding: 10px 25px 30px 25px;
+  margin-top: auto;
 `;
 
 export const Cta = styled.div`
@@ -106,3 +112,4 @@ export const Cta = styled.div`
     opacity: 0.85;
   }
 `;
+
