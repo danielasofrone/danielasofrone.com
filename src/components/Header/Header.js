@@ -35,7 +35,7 @@ const Header = ({ t }) => {
             <S.PrimaryButton href="#work" onClick={scrollToId('work')}>
               {t('hero.cta.primary')}
             </S.PrimaryButton>
-            <S.SecondaryButton href="#about" onClick={scrollToId('work')}>
+            <S.SecondaryButton href="#about" onClick={scrollToId('about')}>
               {t('hero.cta.secondary')}
             </S.SecondaryButton>
           </S.Actions>
