@@ -42,14 +42,13 @@ export const Content = styled.div`
 
 export const TextCol = styled.div`
   @media (max-width: 1024px) {
-    margin: 0 auto;      
+    margin: 0 auto;
     max-width: 680px;
   }
 `;
 
 export const Headline = styled.h1`
   font-weight: 600;
-  letter-spacing: -0.03em;
   margin: 0 0 0.75rem 0;
   color: #344854;
   font-size: clamp(2.4rem, 5vw, 3.6rem);
