@@ -20,7 +20,6 @@ const Projects = ({t}) => {
         </C.SectionTitle>
         <C.Subtitle>
           <p>{t('selected.projects.text.one')}</p>
-          <p>{t('selected.projects.text.two')}</p>
           <p></p>
         </C.Subtitle>
       </S.TitleContainer>
