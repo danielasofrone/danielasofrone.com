@@ -11,22 +11,32 @@ const ProjectsCard = ({
   githubLink,
   noGithub,
 }) => (
-  <S.ServicesCardContainer>
-    <a href={deploymentLink} target="blank">
-      <S.ServicesCardImage src={image} alt="Card image" />
-    </a>
+  <S.ServicesCardContainer
+    role="link"
+    tabIndex={0}
+    onClick={() => window.open(deploymentLink, '_blank', 'noopener,noreferrer')}
+    onKeyDown={(e) => {
+      if (e.key === 'Enter') {
+        window.open(deploymentLink, '_blank', 'noopener,noreferrer');
+      }
+    }}
+  >
+    <S.ServicesCardImage src={image} alt={`${title} preview`} />
+
     <S.TextContainer>
-      <S.ServicesCardTitle>
-        <a href={deploymentLink} target="blank">
-          {title}
-        </a>
-      </S.ServicesCardTitle>
+      <S.ServicesCardTitle>{title}</S.ServicesCardTitle>
       <S.ServicesCardDescription>{description}</S.ServicesCardDescription>
     </S.TextContainer>
-    <S.GithubIconContainer noGithub={noGithub}>
-      <a href={githubLink} target="blank">
-        <S.Icon src={icon_github} />
-      </a>
+
+    <S.GithubIconContainer
+      noGithub={noGithub}
+      onClick={(e) => e.stopPropagation()} // IMPORTANT
+    >
+      {!noGithub && (
+        <a href={githubLink} target="_blank" rel="noopener noreferrer">
+          <S.Icon src={icon_github} alt="GitHub" />
+        </a>
+      )}
     </S.GithubIconContainer>
   </S.ServicesCardContainer>
 );

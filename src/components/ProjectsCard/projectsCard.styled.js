@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const ServicesCardContainer = styled.div`
+  cursor: pointer;
   display: inline-block;
   position: relative;
   max-width: 355px;
