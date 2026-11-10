@@ -1,0 +1,61 @@
+.paintings-site .artwork-carousel {
+  min-width: 0;
+}
+.paintings-site .artwork-carousel-frame {
+  aspect-ratio: 1;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: pan-y;
+}
+.paintings-site .artwork-carousel-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.paintings-site .artwork-carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 12px;
+}
+.paintings-site .artwork-carousel-controls button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #525252;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.paintings-site .artwork-carousel-controls button:hover {
+  background: #f5f5f5;
+}
+.paintings-site .artwork-carousel-controls button:focus-visible {
+  outline: 2px solid #171717;
+  outline-offset: 2px;
+}
+.paintings-site .artwork-carousel-dots {
+  display: flex;
+}
+.paintings-site .artwork-carousel-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d4d4d4;
+}
+.paintings-site .artwork-carousel-dots [aria-current='true'] span {
+  background: #171717;
+}
+.paintings-site .artwork-carousel-count {
+  text-align: center;
+  font-size: 12px;
+  color: #737373;
+  margin: 0;
+}

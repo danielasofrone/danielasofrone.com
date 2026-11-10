@@ -50,7 +50,7 @@ const Navbar = ({t}) => {
           PaperProps={{
             style: {
               width: '20ch',
-              height: '25ch',
+              maxHeight: '80vh',
             },
           }}
         >
@@ -59,7 +59,7 @@ const Navbar = ({t}) => {
               <a href="#about"> {t('about')}</a>
             </MenuItem>
           </S.BurgerMenuItem>
-           <S.BurgerMenuItem>
+          <S.BurgerMenuItem>
             <MenuItem onClick={handleClose}>
               <a href="#writing">{t('writing')}</a>
             </MenuItem>
