@@ -1,0 +1,123 @@
+{
+  "generator": "Built-in image_gen tool",
+  "revision": "Physical scale correction based on dimensions in original painting filenames",
+  "basePrompt": "Use case: compositing. Create a photorealistic furnished-room preview with STRICT PHYSICAL SCALE, 1536x1024 landscape. The input is the original painting: reproduce its complete artwork, brushwork, colors, signature and proportions faithfully, no cropping or reinterpretation. Front-on camera, wall and sofa back in the same plane, no foreshortening. A FULLY VISIBLE standard 220 cm wide sofa is directly below the art, all sofa edges visible. This is an ordinary small/medium painting NOT a statement mural. Keep plenty of bare wall around the small painting. SCALE ANCHORS: at this camera distance 1 cm equals approximately 4 pixels: sofa spans 880 pixels, its back is around y=620, feet around y=920. The painting is centered at x=768 y=330. Use the exact painting pixel width and height below; do not enlarge for visual impact. Very thin 1cm wood frame only, no mat. All other furniture at normal household scale. Natural daylight, realistic room materials, no people, no text overlays, no other artwork. Keep the entire sofa and generous room context in the shot. ",
+  "images": [
+    {
+      "file": "anxiety-room.png",
+      "painting": "anxiety",
+      "dimensions": "60 × 80 cm",
+      "room": "Warm Scandinavian living room, oatmeal linen sofa, walnut side table, ivory plaster wall, woven rug, side daylight.",
+      "prompt": "Use case: compositing. Create a photorealistic furnished-room preview with STRICT PHYSICAL SCALE, 1536x1024 landscape. The input is the original painting: reproduce its complete artwork, brushwork, colors, signature and proportions faithfully, no cropping or reinterpretation. Front-on camera, wall and sofa back in the same plane, no foreshortening. A FULLY VISIBLE standard 220 cm wide sofa is directly below the art, all sofa edges visible. This is an ordinary small/medium painting NOT a statement mural. Keep plenty of bare wall around the small painting. SCALE ANCHORS: at this camera distance 1 cm equals approximately 4 pixels: sofa spans 880 pixels, its back is around y=620, feet around y=920. The painting is centered at x=768 y=330. Use the exact painting pixel width and height below; do not enlarge for visual impact. Very thin 1cm wood frame only, no mat. All other furniture at normal household scale. Natural daylight, realistic room materials, no people, no text overlays, no other artwork. Keep the entire sofa and generous room context in the shot. Canvas 60 cm WIDE × 80 cm HIGH. Painting image MUST occupy only 240 × 320 pixels, or 27.3% of sofa width. Styling inspiration (adapt seating to the full 220cm sofa): Warm Scandinavian living room, oatmeal linen sofa, walnut side table, ivory plaster wall, woven rug, side daylight.",
+      "sofaReferenceWidthCm": 220,
+      "targetPaintingWidthPercentOfSofa": 27.3
+    },
+    {
+      "file": "butterflies-room.png",
+      "painting": "butterflies",
+      "dimensions": "40 × 50 cm",
+      "room": "Intimate reading corner, pale blue-grey wall, cream lounge chair, oak bookshelf, small ceramic lamp, diffused morning light.",
+      "prompt": "Use case: compositing. Create a photorealistic furnished-room preview with STRICT PHYSICAL SCALE, 1536x1024 landscape. The input is the original painting: reproduce its complete artwork, brushwork, colors, signature and proportions faithfully, no cropping or reinterpretation. Front-on camera, wall and sofa back in the same plane, no foreshortening. A FULLY VISIBLE standard 220 cm wide sofa is directly below the art, all sofa edges visible. This is an ordinary small/medium painting NOT a statement mural. Keep plenty of bare wall around the small painting. SCALE ANCHORS: at this camera distance 1 cm equals approximately 4 pixels: sofa spans 880 pixels, its back is around y=620, feet around y=920. The painting is centered at x=768 y=330. Use the exact painting pixel width and height below; do not enlarge for visual impact. Very thin 1cm wood frame only, no mat. All other furniture at normal household scale. Natural daylight, realistic room materials, no people, no text overlays, no other artwork. Keep the entire sofa and generous room context in the shot. Canvas 40 cm WIDE × 50 cm HIGH. Painting image MUST occupy only 160 × 200 pixels, or 18.2% of sofa width. Styling inspiration (adapt seating to the full 220cm sofa): Intimate reading corner, pale blue-grey wall, cream lounge chair, oak bookshelf, small ceramic lamp, diffused morning light.",
+      "sofaReferenceWidthCm": 220,
+      "targetPaintingWidthPercentOfSofa": 18.2
+    },
+    {
+      "file": "butterfly-caught-room.png",
+      "painting": "butterfly-caught",
+      "dimensions": "60 × 60 cm",
+      "room": "Contemporary apartment living room, warm white wall, charcoal loveseat, burgundy cushion, travertine table, soft daylight.",
+      "prompt": "Use case: compositing. Create a photorealistic furnished-room preview with STRICT PHYSICAL SCALE, 1536x1024 landscape. The input is the original painting: reproduce its complete artwork, brushwork, colors, signature and proportions faithfully, no cropping or reinterpretation. Front-on camera, wall and sofa back in the same plane, no foreshortening. A FULLY VISIBLE standard 220 cm wide sofa is directly below the art, all sofa edges visible. This is an ordinary small/medium painting NOT a statement mural. Keep plenty of bare wall around the small painting. SCALE ANCHORS: at this camera distance 1 cm equals approximately 4 pixels: sofa spans 880 pixels, its back is around y=620, feet around y=920. The painting is centered at x=768 y=330. Use the exact painting pixel width and height below; do not enlarge for visual impact. Very thin 1cm wood frame only, no mat. All other furniture at normal household scale. Natural daylight, realistic room materials, no people, no text overlays, no other artwork. Keep the entire sofa and generous room context in the shot. Canvas 60 cm WIDE × 60 cm HIGH. Painting image MUST occupy only 240 × 240 pixels, or 27.3% of sofa width. Styling inspiration (adapt seating to the full 220cm sofa): Contemporary apartment living room, warm white wall, charcoal loveseat, burgundy cushion, travertine table, soft daylight.",
+      "sofaReferenceWidthCm": 220,
+      "targetPaintingWidthPercentOfSofa": 27.3
+    },
+    {
+      "file": "choice-room.png",
+      "painting": "choice",
+      "dimensions": "70 × 70 cm",
+      "room": "Mid-century sitting room, pale sand wall, caramel leather sofa, walnut credenza, warm afternoon sunlight.",
+      "prompt": "Use case: compositing. Create a photorealistic furnished-room preview with STRICT PHYSICAL SCALE, 1536x1024 landscape. The input is the original painting: reproduce its complete artwork, brushwork, colors, signature and proportions faithfully, no cropping or reinterpretation. Front-on camera, wall and sofa back in the same plane, no foreshortening. A FULLY VISIBLE standard 220 cm wide sofa is directly below the art, all sofa edges visible. This is an ordinary small/medium painting NOT a statement mural. Keep plenty of bare wall around the small painting. SCALE ANCHORS: at this camera distance 1 cm equals approximately 4 pixels: sofa spans 880 pixels, its back is around y=620, feet around y=920. The painting is centered at x=768 y=330. Use the exact painting pixel width and height below; do not enlarge for visual impact. Very thin 1cm wood frame only, no mat. All other furniture at normal household scale. Natural daylight, realistic room materials, no people, no text overlays, no other artwork. Keep the entire sofa and generous room context in the shot. Canvas 70 cm WIDE × 70 cm HIGH. Painting image MUST occupy only 280 × 280 pixels, or 31.8% of sofa width. Styling inspiration (adapt seating to the full 220cm sofa): Mid-century sitting room, pale sand wall, caramel leather sofa, walnut credenza, warm afternoon sunlight.",
+      "sofaReferenceWidthCm": 220,
+      "targetPaintingWidthPercentOfSofa": 31.8
+    },
+    {
+      "file": "contained-room.png",
+      "painting": "contained",
+      "dimensions": "70 × 50 cm",
+      "room": "Airy dining room, pale sage wall, round oak dining table, woven chairs, linen curtains, gentle daylight.",
+      "prompt": "Use case: compositing. Create a photorealistic furnished-room preview with STRICT PHYSICAL SCALE, 1536x1024 landscape. The input is the original painting: reproduce its complete artwork, brushwork, colors, signature and proportions faithfully, no cropping or reinterpretation. Front-on camera, wall and sofa back in the same plane, no foreshortening. A FULLY VISIBLE standard 220 cm wide sofa is directly below the art, all sofa edges visible. This is an ordinary small/medium painting NOT a statement mural. Keep plenty of bare wall around the small painting. SCALE ANCHORS: at this camera distance 1 cm equals approximately 4 pixels: sofa spans 880 pixels, its back is around y=620, feet around y=920. The painting is centered at x=768 y=330. Use the exact painting pixel width and height below; do not enlarge for visual impact. Very thin 1cm wood frame only, no mat. All other furniture at normal household scale. Natural daylight, realistic room materials, no people, no text overlays, no other artwork. Keep the entire sofa and generous room context in the shot. Canvas 70 cm WIDE × 50 cm HIGH. Painting image MUST occupy only 280 × 200 pixels, or 31.8% of sofa width. Styling inspiration (adapt seating to the full 220cm sofa): Airy dining room, pale sage wall, round oak dining table, woven chairs, linen curtains, gentle daylight.",
+      "sofaReferenceWidthCm": 220,
+      "targetPaintingWidthPercentOfSofa": 31.8
+    },
+    {
+      "file": "crush-room.png",
+      "painting": "crush",
+      "dimensions": "60 × 80 cm",
+      "room": "Modern loft sitting area, light concrete wall, low cream modular sofa, black side table, tall window with soft daylight.",
+      "prompt": "Use case: compositing. Create a photorealistic furnished-room preview with STRICT PHYSICAL SCALE, 1536x1024 landscape. The input is the original painting: reproduce its complete artwork, brushwork, colors, signature and proportions faithfully, no cropping or reinterpretation. Front-on camera, wall and sofa back in the same plane, no foreshortening. A FULLY VISIBLE standard 220 cm wide sofa is directly below the art, all sofa edges visible. This is an ordinary small/medium painting NOT a statement mural. Keep plenty of bare wall around the small painting. SCALE ANCHORS: at this camera distance 1 cm equals approximately 4 pixels: sofa spans 880 pixels, its back is around y=620, feet around y=920. The painting is centered at x=768 y=330. Use the exact painting pixel width and height below; do not enlarge for visual impact. Very thin 1cm wood frame only, no mat. All other furniture at normal household scale. Natural daylight, realistic room materials, no people, no text overlays, no other artwork. Keep the entire sofa and generous room context in the shot. Canvas 60 cm WIDE × 80 cm HIGH. Painting image MUST occupy only 240 × 320 pixels, or 27.3% of sofa width. Styling inspiration (adapt seating to the full 220cm sofa): Modern loft sitting area, light concrete wall, low cream modular sofa, black side table, tall window with soft daylight.",
+      "sofaReferenceWidthCm": 220,
+      "targetPaintingWidthPercentOfSofa": 27.3
+    },
+    {
+      "file": "in-love-room.png",
+      "painting": "in-love",
+      "dimensions": "50 × 60 cm",
+      "room": "Soft coastal reading room, warm white wall, natural linen armchair, pale oak cabinet, blue cushion, bright indirect daylight.",
+      "prompt": "Use case: compositing. Create a photorealistic furnished-room preview with STRICT PHYSICAL SCALE, 1536x1024 landscape. The input is the original painting: reproduce its complete artwork, brushwork, colors, signature and proportions faithfully, no cropping or reinterpretation. Front-on camera, wall and sofa back in the same plane, no foreshortening. A FULLY VISIBLE standard 220 cm wide sofa is directly below the art, all sofa edges visible. This is an ordinary small/medium painting NOT a statement mural. Keep plenty of bare wall around the small painting. SCALE ANCHORS: at this camera distance 1 cm equals approximately 4 pixels: sofa spans 880 pixels, its back is around y=620, feet around y=920. The painting is centered at x=768 y=330. Use the exact painting pixel width and height below; do not enlarge for visual impact. Very thin 1cm wood frame only, no mat. All other furniture at normal household scale. Natural daylight, realistic room materials, no people, no text overlays, no other artwork. Keep the entire sofa and generous room context in the shot. Canvas 50 cm WIDE × 60 cm HIGH. Painting image MUST occupy only 200 × 240 pixels, or 22.7% of sofa width. Styling inspiration (adapt seating to the full 220cm sofa): Soft coastal reading room, warm white wall, natural linen armchair, pale oak cabinet, blue cushion, bright indirect daylight.",
+      "sofaReferenceWidthCm": 220,
+      "targetPaintingWidthPercentOfSofa": 22.7
+    },
+    {
+      "file": "phantasy-room.png",
+      "painting": "phantasy",
+      "dimensions": "70 × 70 cm",
+      "room": "Calm contemporary living room, pale greige wall, curved ivory sofa, dark oak side table, muted teal accent, overcast window light.",
+      "prompt": "Use case: compositing. Create a photorealistic furnished-room preview with STRICT PHYSICAL SCALE, 1536x1024 landscape. The input is the original painting: reproduce its complete artwork, brushwork, colors, signature and proportions faithfully, no cropping or reinterpretation. Front-on camera, wall and sofa back in the same plane, no foreshortening. A FULLY VISIBLE standard 220 cm wide sofa is directly below the art, all sofa edges visible. This is an ordinary small/medium painting NOT a statement mural. Keep plenty of bare wall around the small painting. SCALE ANCHORS: at this camera distance 1 cm equals approximately 4 pixels: sofa spans 880 pixels, its back is around y=620, feet around y=920. The painting is centered at x=768 y=330. Use the exact painting pixel width and height below; do not enlarge for visual impact. Very thin 1cm wood frame only, no mat. All other furniture at normal household scale. Natural daylight, realistic room materials, no people, no text overlays, no other artwork. Keep the entire sofa and generous room context in the shot. Canvas 70 cm WIDE × 70 cm HIGH. Painting image MUST occupy only 280 × 280 pixels, or 31.8% of sofa width. Styling inspiration (adapt seating to the full 220cm sofa): Calm contemporary living room, pale greige wall, curved ivory sofa, dark oak side table, muted teal accent, overcast window light.",
+      "sofaReferenceWidthCm": 220,
+      "targetPaintingWidthPercentOfSofa": 31.8
+    },
+    {
+      "file": "tempus-fugit-room.png",
+      "painting": "tempus-fugit",
+      "dimensions": "80 × 60 cm",
+      "room": "Minimal furnished home study, warm ivory wall, walnut writing desk and upholstered chair, books, gentle side daylight.",
+      "prompt": "Use case: compositing. Create a photorealistic furnished-room preview with STRICT PHYSICAL SCALE, 1536x1024 landscape. The input is the original painting: reproduce its complete artwork, brushwork, colors, signature and proportions faithfully, no cropping or reinterpretation. Front-on camera, wall and sofa back in the same plane, no foreshortening. A FULLY VISIBLE standard 220 cm wide sofa is directly below the art, all sofa edges visible. This is an ordinary small/medium painting NOT a statement mural. Keep plenty of bare wall around the small painting. SCALE ANCHORS: at this camera distance 1 cm equals approximately 4 pixels: sofa spans 880 pixels, its back is around y=620, feet around y=920. The painting is centered at x=768 y=330. Use the exact painting pixel width and height below; do not enlarge for visual impact. Very thin 1cm wood frame only, no mat. All other furniture at normal household scale. Natural daylight, realistic room materials, no people, no text overlays, no other artwork. Keep the entire sofa and generous room context in the shot. Canvas 80 cm WIDE × 60 cm HIGH. Painting image MUST occupy only 320 × 240 pixels, or 36.4% of sofa width. Styling inspiration (adapt seating to the full 220cm sofa): Minimal furnished home study, warm ivory wall, walnut writing desk and upholstered chair, books, gentle side daylight.",
+      "sofaReferenceWidthCm": 220,
+      "targetPaintingWidthPercentOfSofa": 36.4
+    },
+    {
+      "file": "the-definition-of-a-relationship-room.png",
+      "painting": "the-definition-of-a-relationship",
+      "dimensions": "70 × 70 cm",
+      "room": "Modern eclectic sitting room, mushroom plaster wall, olive sofa, round walnut coffee table, understated brass floor lamp.",
+      "prompt": "Use case: compositing. Create a photorealistic furnished-room preview with STRICT PHYSICAL SCALE, 1536x1024 landscape. The input is the original painting: reproduce its complete artwork, brushwork, colors, signature and proportions faithfully, no cropping or reinterpretation. Front-on camera, wall and sofa back in the same plane, no foreshortening. A FULLY VISIBLE standard 220 cm wide sofa is directly below the art, all sofa edges visible. This is an ordinary small/medium painting NOT a statement mural. Keep plenty of bare wall around the small painting. SCALE ANCHORS: at this camera distance 1 cm equals approximately 4 pixels: sofa spans 880 pixels, its back is around y=620, feet around y=920. The painting is centered at x=768 y=330. Use the exact painting pixel width and height below; do not enlarge for visual impact. Very thin 1cm wood frame only, no mat. All other furniture at normal household scale. Natural daylight, realistic room materials, no people, no text overlays, no other artwork. Keep the entire sofa and generous room context in the shot. Canvas 70 cm WIDE × 70 cm HIGH. Painting image MUST occupy only 280 × 280 pixels, or 31.8% of sofa width. Styling inspiration (adapt seating to the full 220cm sofa): Modern eclectic sitting room, mushroom plaster wall, olive sofa, round walnut coffee table, understated brass floor lamp.",
+      "sofaReferenceWidthCm": 220,
+      "targetPaintingWidthPercentOfSofa": 31.8
+    },
+    {
+      "file": "wasteland-room.png",
+      "painting": "wasteland",
+      "dimensions": "60 × 80 cm",
+      "room": "Quiet elegant living room, dusty taupe wall, cream loveseat, dark timber console, linen curtains, soft afternoon light.",
+      "prompt": "Use case: compositing. Create a photorealistic furnished-room preview with STRICT PHYSICAL SCALE, 1536x1024 landscape. The input is the original painting: reproduce its complete artwork, brushwork, colors, signature and proportions faithfully, no cropping or reinterpretation. Front-on camera, wall and sofa back in the same plane, no foreshortening. A FULLY VISIBLE standard 220 cm wide sofa is directly below the art, all sofa edges visible. This is an ordinary small/medium painting NOT a statement mural. Keep plenty of bare wall around the small painting. SCALE ANCHORS: at this camera distance 1 cm equals approximately 4 pixels: sofa spans 880 pixels, its back is around y=620, feet around y=920. The painting is centered at x=768 y=330. Use the exact painting pixel width and height below; do not enlarge for visual impact. Very thin 1cm wood frame only, no mat. All other furniture at normal household scale. Natural daylight, realistic room materials, no people, no text overlays, no other artwork. Keep the entire sofa and generous room context in the shot. Canvas 60 cm WIDE × 80 cm HIGH. Painting image MUST occupy only 240 × 320 pixels, or 27.3% of sofa width. Styling inspiration (adapt seating to the full 220cm sofa): Quiet elegant living room, dusty taupe wall, cream loveseat, dark timber console, linen curtains, soft afternoon light.",
+      "sofaReferenceWidthCm": 220,
+      "targetPaintingWidthPercentOfSofa": 27.3
+    },
+    {
+      "file": "water-ingestion-test-room.png",
+      "painting": "water-ingestion-test",
+      "dimensions": "100 × 100 cm",
+      "room": "Spacious bright apartment lounge, ivory textured wall, warm grey sofa, oak coffee table, large plant at far edge, natural daylight.",
+      "prompt": "Use case: compositing. Create a photorealistic furnished-room preview with STRICT PHYSICAL SCALE, 1536x1024 landscape. The input is the original painting: reproduce its complete artwork, brushwork, colors, signature and proportions faithfully, no cropping or reinterpretation. Front-on camera, wall and sofa back in the same plane, no foreshortening. A FULLY VISIBLE standard 220 cm wide sofa is directly below the art, all sofa edges visible. This is an ordinary small/medium painting NOT a statement mural. Keep plenty of bare wall around the small painting. SCALE ANCHORS: at this camera distance 1 cm equals approximately 4 pixels: sofa spans 880 pixels, its back is around y=620, feet around y=920. The painting is centered at x=768 y=330. Use the exact painting pixel width and height below; do not enlarge for visual impact. Very thin 1cm wood frame only, no mat. All other furniture at normal household scale. Natural daylight, realistic room materials, no people, no text overlays, no other artwork. Keep the entire sofa and generous room context in the shot. Canvas 100 cm WIDE × 100 cm HIGH. Painting image MUST occupy only 400 × 400 pixels, or 45.5% of sofa width. Styling inspiration (adapt seating to the full 220cm sofa): Spacious bright apartment lounge, ivory textured wall, warm grey sofa, oak coffee table, large plant at far edge, natural daylight.",
+      "sofaReferenceWidthCm": 220,
+      "targetPaintingWidthPercentOfSofa": 45.5
+    }
+  ],
+  "note": "Visual approximations with explicit canvas-to-furniture scale constraints; not surveyed room measurements.",
+  "watermark": {
+    "text": "AI generated image",
+    "placement": "bottom-right",
+    "style": "Small, understated pale sans-serif text with no background box",
+    "method": "Built-in image_gen edit",
+    "prompt": "Add only the exact text AI generated image, very small at the bottom-right with a subtle shadow; preserve artwork scale, room composition, framing and resolution."
+  }
+}

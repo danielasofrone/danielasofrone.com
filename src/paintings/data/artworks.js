@@ -22,9 +22,24 @@ import relationship2 from '../assets/paintings/The Definition of a Relationship-
 import wasteland1 from '../assets/paintings/Wasteland-1 60x80.jpg';
 import wasteland2 from '../assets/paintings/Wasteland-2 60x80.jpg';
 import waterIngestionTest1 from '../assets/paintings/Water Ingestion Test-1 100x100.JPG';
+import roomPreview1 from '../assets/rooms/anxiety-room.png';
+import roomPreview2 from '../assets/rooms/butterflies-room.png';
+import roomPreview3 from '../assets/rooms/butterfly-caught-room.png';
+import roomPreview4 from '../assets/rooms/choice-room.png';
+import roomPreview5 from '../assets/rooms/contained-room.png';
+import roomPreview6 from '../assets/rooms/crush-room.png';
+import roomPreview7 from '../assets/rooms/in-love-room.png';
+import roomPreview8 from '../assets/rooms/phantasy-room.png';
+import roomPreview9 from '../assets/rooms/tempus-fugit-room.png';
+import roomPreview10 from '../assets/rooms/the-definition-of-a-relationship-room.png';
+import roomPreview11 from '../assets/rooms/wasteland-room.png';
+import roomPreview12 from '../assets/rooms/water-ingestion-test-room.png';
+import waterIngestionRoom from '../assets/hero-water-ingestion-test.png';
+
 export const artworks = [
   {
     id: 'anxiety',
+    roomImage: roomPreview1,
     title: 'Anxiety',
     image: anxiety1,
     secondaryImage: anxiety2,
@@ -32,6 +47,7 @@ export const artworks = [
   },
   {
     id: 'butterflies',
+    roomImage: roomPreview2,
     title: 'Butterflies',
     image: butterflies1,
     secondaryImage: butterflies2,
@@ -39,6 +55,7 @@ export const artworks = [
   },
   {
     id: 'butterfly-caught',
+    roomImage: roomPreview3,
     title: 'Butterfly Caught',
     image: butterflyCaught1,
     secondaryImage: butterflyCaught2,
@@ -46,6 +63,7 @@ export const artworks = [
   },
   {
     id: 'choice',
+    roomImage: roomPreview4,
     title: 'Choice',
     image: choice1,
     secondaryImage: choice2,
@@ -53,6 +71,7 @@ export const artworks = [
   },
   {
     id: 'contained',
+    roomImage: roomPreview5,
     title: 'Contained',
     image: contained1,
     secondaryImage: contained2,
@@ -60,6 +79,7 @@ export const artworks = [
   },
   {
     id: 'crush',
+    roomImage: roomPreview6,
     title: 'Crush',
     image: crush1,
     secondaryImage: crush2,
@@ -67,6 +87,7 @@ export const artworks = [
   },
   {
     id: 'in-love',
+    roomImage: roomPreview7,
     title: 'In Love',
     image: inLove1,
     secondaryImage: inLove2,
@@ -74,6 +95,7 @@ export const artworks = [
   },
   {
     id: 'phantasy',
+    roomImage: roomPreview8,
     title: 'Phantasy',
     image: phantasy1,
     secondaryImage: phantasy2,
@@ -81,6 +103,7 @@ export const artworks = [
   },
   {
     id: 'tempus-fugit',
+    roomImage: roomPreview9,
     title: 'Tempus Fugit',
     image: tempusFugit1,
     secondaryImage: tempusFugit2,
@@ -88,6 +111,7 @@ export const artworks = [
   },
   {
     id: 'the-definition-of-a-relationship',
+    roomImage: roomPreview10,
     title: 'The Definition of a Relationship',
     image: relationship1,
     secondaryImage: relationship2,
@@ -95,6 +119,7 @@ export const artworks = [
   },
   {
     id: 'wasteland',
+    roomImage: roomPreview11,
     title: 'Wasteland',
     image: wasteland1,
     secondaryImage: wasteland2,
@@ -102,8 +127,10 @@ export const artworks = [
   },
   {
     id: 'water-ingestion-test',
+    roomImage: roomPreview12,
     title: 'Water Ingestion Test',
     image: waterIngestionTest1,
+    secondaryImage: waterIngestionRoom,
     dimensions: {width: 100, height: 100, unit: 'cm'},
   },
 ];

@@ -4,7 +4,11 @@ import './artworkCarousel.css';
 export default function ArtworkCarousel({artwork}) {
   const [active, setActive] = useState(0);
   const touchStart = useRef(null);
-  const images = [artwork.image, artwork.secondaryImage].filter(Boolean);
+  const images = [
+    {src: artwork.image, description: 'painting'},
+    {src: artwork.secondaryImage, description: 'alternate view'},
+    {src: artwork.roomImage, description: 'furnished room preview'},
+  ].filter(image => image.src);
   const multiple = images.length > 1;
   const move = direction =>
     setActive(index => (index + direction + images.length) % images.length);
@@ -40,10 +44,8 @@ export default function ArtworkCarousel({artwork}) {
         }}
       >
         <img
-          src={images[active]}
-          alt={`${artwork.title} — ${
-            active === 0 ? 'painting' : 'alternate view'
-          }`}
+          src={images[active].src}
+          alt={`${artwork.title} — ${images[active].description}`}
         />
       </div>
       {multiple && (
@@ -58,7 +60,7 @@ export default function ArtworkCarousel({artwork}) {
           <div className="artwork-carousel-dots" aria-label="Choose image">
             {images.map((image, index) => (
               <button
-                key={image}
+                key={image.src}
                 type="button"
                 aria-label={`Show image ${index + 1} of ${images.length}`}
                 aria-current={active === index ? 'true' : undefined}

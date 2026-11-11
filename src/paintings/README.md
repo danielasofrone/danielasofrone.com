@@ -16,3 +16,13 @@ versions. The two SVG icons are implemented locally to avoid another dependency.
 
 As with the existing `/articles/:slug` pages, hosting must serve `index.html`
 for application routes that do not correspond to a static file.
+
+
+## Furnished room previews
+
+Each artwork has a `roomImage` shown as its third carousel slide. The 12 generated
+PNG images live in `assets/rooms/`, with exact generation prompts recorded in
+`assets/rooms/generation-notes.json`. They were created with the built-in image
+generator using each original painting as a reference and distinct room briefs.
+These are illustrative interior impressions, not exact scale measurements.
+The existing hero room image is also used as Water Ingestion Test's second slide.
